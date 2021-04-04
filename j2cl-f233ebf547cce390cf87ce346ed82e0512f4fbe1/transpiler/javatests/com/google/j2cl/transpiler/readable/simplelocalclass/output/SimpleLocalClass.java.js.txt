@@ -1,0 +1,21 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.simplelocalclass.SimpleLocalClass.
+ *
+ * @suppress {extraRequire, lateProvide, unusedLocalVariables,
+ * strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.simplelocalclass.SimpleLocalClass');
+
+
+// Imports headers for both eager and lazy dependencies to ensure that
+// all files are included in the dependency tree.
+const _j_l_Object = goog.require('java.lang.Object');
+const _$Util = goog.require('nativebootstrap.Util');
+const _$1InnerClass = goog.require('com.google.j2cl.transpiler.readable.simplelocalclass.SimpleLocalClass.$1InnerClass');
+const _$1InnerClassWithoutCaptures = goog.require('com.google.j2cl.transpiler.readable.simplelocalclass.SimpleLocalClass.$1InnerClassWithoutCaptures');
+
+
+// Re-exports the implementation.
+var SimpleLocalClass = goog.require('com.google.j2cl.transpiler.readable.simplelocalclass.SimpleLocalClass$impl');
+exports = SimpleLocalClass;

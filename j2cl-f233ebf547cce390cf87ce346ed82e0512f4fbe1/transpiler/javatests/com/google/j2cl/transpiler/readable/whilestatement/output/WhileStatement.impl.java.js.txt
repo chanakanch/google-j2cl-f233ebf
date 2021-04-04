@@ -1,0 +1,97 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.whilestatement.WhileStatement.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.whilestatement.WhileStatement$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class WhileStatement extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!WhileStatement}
+   * @public
+   */
+  static $create__() {
+    WhileStatement.$clinit();
+    let $instance = new WhileStatement();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_whilestatement_WhileStatement__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_whilestatement_WhileStatement__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_test__() {
+    let count = 0;
+    while (count < 5) {
+      count++;
+    }
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    WhileStatement.$clinit = (() => {});
+    WhileStatement.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof WhileStatement;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, WhileStatement);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    WhileStatement,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.whilestatement.WhileStatement'));
+
+
+
+exports = WhileStatement;
+//# sourceMappingURL=WhileStatement.js.map

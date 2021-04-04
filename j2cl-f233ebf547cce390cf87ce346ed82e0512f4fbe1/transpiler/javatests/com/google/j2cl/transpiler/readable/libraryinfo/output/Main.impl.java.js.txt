@@ -1,0 +1,150 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.libraryinfo.Main.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.libraryinfo.Main$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let FunctionImpl = goog.forwardDeclare('com.google.j2cl.transpiler.readable.libraryinfo.Main.FunctionImpl$impl');
+
+
+class Main extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!Main}
+   * @public
+   */
+  static $create__() {
+    Main.$clinit();
+    let $instance = new Main();
+    $instance.$ctor__com_google_j2cl_transpiler_readable_libraryinfo_Main__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_libraryinfo_Main__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static entryPoint() {
+    Main.$clinit();
+    Main.$create__()
+        .m_execute___$p_com_google_j2cl_transpiler_readable_libraryinfo_Main();
+    let jsFunction = FunctionImpl.$create__();
+    jsFunction = ((/** ?string */ s) => {
+      console.log(s);
+    });
+    jsFunction('foo');
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_execute___$p_com_google_j2cl_transpiler_readable_libraryinfo_Main() {
+    console.log('Foo');
+  }
+
+  /**
+   * @override
+   * @return {?string}
+   * @public
+   */
+  toString() {
+    return super.toString();
+  }
+
+  /**
+   * @return {?string}
+   * @public
+   */
+  static get f_STATIC_FIELD__com_google_j2cl_transpiler_readable_libraryinfo_Main() {
+    return (
+        Main.$clinit(),
+        Main.$f_STATIC_FIELD__com_google_j2cl_transpiler_readable_libraryinfo_Main);
+  }
+
+  /**
+   * @param {?string} value
+   * @return {void}
+   * @public
+   */
+  static set f_STATIC_FIELD__com_google_j2cl_transpiler_readable_libraryinfo_Main(
+      value) {
+    (Main.$clinit(),
+     Main.$f_STATIC_FIELD__com_google_j2cl_transpiler_readable_libraryinfo_Main =
+         value);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Main.$clinit = (() => {});
+    Main.$loadModules();
+    j_l_Object.$clinit();
+    Main.$f_STATIC_FIELD__com_google_j2cl_transpiler_readable_libraryinfo_Main =
+        'STATIC_FIELD';
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof Main;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, Main);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    FunctionImpl = goog.module.get(
+        'com.google.j2cl.transpiler.readable.libraryinfo.Main.FunctionImpl$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    Main,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.libraryinfo.Main'));
+
+
+/** @private {?string} */
+Main.$f_STATIC_FIELD__com_google_j2cl_transpiler_readable_libraryinfo_Main;
+
+
+
+exports = Main;
+//# sourceMappingURL=Main.js.map

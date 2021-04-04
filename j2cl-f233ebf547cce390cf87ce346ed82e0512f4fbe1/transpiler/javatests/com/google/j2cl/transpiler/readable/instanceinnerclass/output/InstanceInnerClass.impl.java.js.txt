@@ -1,0 +1,110 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.instanceinnerclass.InstanceInnerClass.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.instanceinnerclass.InstanceInnerClass$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let InnerClass = goog.forwardDeclare('com.google.j2cl.transpiler.readable.instanceinnerclass.InstanceInnerClass.InnerClass$impl');
+
+
+class InstanceInnerClass extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {number} */
+    this.f_instanceField__com_google_j2cl_transpiler_readable_instanceinnerclass_InstanceInnerClass =
+        0;
+  }
+
+  /**
+   * @return {!InstanceInnerClass}
+   * @public
+   */
+  static $create__() {
+    InstanceInnerClass.$clinit();
+    let $instance = new InstanceInnerClass();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_instanceinnerclass_InstanceInnerClass__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_instanceinnerclass_InstanceInnerClass__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_funOuter__() {}
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_test__() {
+    InnerClass
+        .$create__com_google_j2cl_transpiler_readable_instanceinnerclass_InstanceInnerClass(
+            InstanceInnerClass.$create__());
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    InstanceInnerClass.$clinit = (() => {});
+    InstanceInnerClass.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof InstanceInnerClass;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, InstanceInnerClass);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    InnerClass = goog.module.get(
+        'com.google.j2cl.transpiler.readable.instanceinnerclass.InstanceInnerClass.InnerClass$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    InstanceInnerClass,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.instanceinnerclass.InstanceInnerClass'));
+
+
+
+exports = InstanceInnerClass;
+//# sourceMappingURL=InstanceInnerClass.js.map

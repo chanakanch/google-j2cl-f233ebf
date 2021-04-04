@@ -1,0 +1,104 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.methodreferences.MethodReferences$ArrayProducer.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.methodreferences.MethodReferences.ArrayProducer$impl');
+
+
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $LambdaAdaptor = goog.forwardDeclare('com.google.j2cl.transpiler.readable.methodreferences.MethodReferences.ArrayProducer.$LambdaAdaptor$impl');
+
+
+/**
+ * @interface
+ * @template T
+ */
+class ArrayProducer {
+  /**
+   * @abstract
+   * @param {number} size
+   * @return {Array<T>}
+   * @public
+   */
+  m_produce__int(size) {}
+
+  /**
+   * @template T
+   * @param {?function(number):Array<T>} fn
+   * @return {ArrayProducer<T>}
+   * @public
+   */
+  static $adapt(fn) {
+    ArrayProducer.$clinit();
+    return /**@type {!$LambdaAdaptor<T>} */ (new $LambdaAdaptor(fn));
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    ArrayProducer.$clinit = (() => {});
+    ArrayProducer.$loadModules();
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @public
+   */
+  static $markImplementor(classConstructor) {
+    /**
+     * @public {boolean}
+     */
+    classConstructor.prototype
+        .$implements__com_google_j2cl_transpiler_readable_methodreferences_MethodReferences_ArrayProducer =
+        true;
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance != null &&
+        !!instance
+              .$implements__com_google_j2cl_transpiler_readable_methodreferences_MethodReferences_ArrayProducer;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return classConstructor != null &&
+        !!classConstructor.prototype
+              .$implements__com_google_j2cl_transpiler_readable_methodreferences_MethodReferences_ArrayProducer;
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $LambdaAdaptor = goog.module.get(
+        'com.google.j2cl.transpiler.readable.methodreferences.MethodReferences.ArrayProducer.$LambdaAdaptor$impl');
+  }
+};
+
+$Util.$setClassMetadataForInterface(
+    ArrayProducer,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.methodreferences.MethodReferences$ArrayProducer'));
+
+
+ArrayProducer.$markImplementor(/** @type {Function} */ (ArrayProducer));
+
+
+exports = ArrayProducer;
+//# sourceMappingURL=MethodReferences$ArrayProducer.js.map

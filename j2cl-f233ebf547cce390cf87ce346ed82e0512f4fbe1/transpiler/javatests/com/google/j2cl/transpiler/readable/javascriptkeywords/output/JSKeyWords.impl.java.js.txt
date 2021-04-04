@@ -1,0 +1,96 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.javascriptkeywords.JSKeyWords.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.javascriptkeywords.JSKeyWords$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class JSKeyWords extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!JSKeyWords}
+   * @public
+   */
+  static $create__() {
+    JSKeyWords.$clinit();
+    let $instance = new JSKeyWords();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_javascriptkeywords_JSKeyWords__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_javascriptkeywords_JSKeyWords__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @param {number} in_1
+   * @return {number}
+   * @public
+   */
+  m_test__int(in_1) {
+    let let_1 = 0;
+    return let_1 + in_1;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    JSKeyWords.$clinit = (() => {});
+    JSKeyWords.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof JSKeyWords;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, JSKeyWords);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    JSKeyWords,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.javascriptkeywords.JSKeyWords'));
+
+
+
+exports = JSKeyWords;
+//# sourceMappingURL=JSKeyWords.js.map

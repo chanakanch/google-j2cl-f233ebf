@@ -1,0 +1,86 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.multipletopclasses.MultipleTopClasses.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.multipletopclasses.MultipleTopClasses$impl');
+
+
+const AnotherClass = goog.require('com.google.j2cl.transpiler.readable.multipletopclasses.AnotherClass$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class MultipleTopClasses extends AnotherClass {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!MultipleTopClasses}
+   * @public
+   */
+  static $create__() {
+    MultipleTopClasses.$clinit();
+    let $instance = new MultipleTopClasses();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_multipletopclasses_MultipleTopClasses__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_multipletopclasses_MultipleTopClasses__() {
+    this.$ctor__com_google_j2cl_transpiler_readable_multipletopclasses_AnotherClass__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    MultipleTopClasses.$clinit = (() => {});
+    MultipleTopClasses.$loadModules();
+    AnotherClass.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof MultipleTopClasses;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, MultipleTopClasses);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    MultipleTopClasses,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.multipletopclasses.MultipleTopClasses'));
+
+
+
+exports = MultipleTopClasses;
+//# sourceMappingURL=MultipleTopClasses.js.map

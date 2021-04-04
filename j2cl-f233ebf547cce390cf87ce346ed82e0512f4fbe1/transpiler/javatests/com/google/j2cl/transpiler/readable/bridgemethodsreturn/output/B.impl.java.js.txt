@@ -1,0 +1,123 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.bridgemethodsreturn.B.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.bridgemethodsreturn.B$impl');
+
+
+const A = goog.require('com.google.j2cl.transpiler.readable.bridgemethodsreturn.A$impl');
+const I = goog.require('com.google.j2cl.transpiler.readable.bridgemethodsreturn.I$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Integer = goog.forwardDeclare('java.lang.Integer$impl');
+let Number = goog.forwardDeclare('java.lang.Number$impl');
+let j_l_String = goog.forwardDeclare('java.lang.String$impl');
+let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
+
+
+/**
+ * @extends {A<(Number|number), ?string>}
+ * @implements {I<Integer, ?string>}
+ */
+class B extends A {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!B}
+   * @public
+   */
+  static $create__() {
+    B.$clinit();
+    let $instance = new B();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_bridgemethodsreturn_B__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_bridgemethodsreturn_B__() {
+    this.$ctor__com_google_j2cl_transpiler_readable_bridgemethodsreturn_A__();
+  }
+
+  /**
+   * @param {?string} s
+   * @return {Integer}
+   * @public
+   */
+  m_fun__java_lang_String(s) {
+    return Integer.$create__int(1);
+  }
+
+  /**
+   * Bridge method.
+   * @override
+   * @param {*} arg0
+   * @return {Integer}
+   * @public
+   */
+  m_fun__java_lang_Object(arg0) {
+    return this.m_fun__java_lang_String(
+        /**@type {?string} */ ($Casts.$to(arg0, j_l_String)));
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    B.$clinit = (() => {});
+    B.$loadModules();
+    A.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof B;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, B);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    Integer = goog.module.get('java.lang.Integer$impl');
+    j_l_String = goog.module.get('java.lang.String$impl');
+    $Casts = goog.module.get('vmbootstrap.Casts$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    B,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.bridgemethodsreturn.B'));
+
+
+I.$markImplementor(B);
+
+
+exports = B;
+//# sourceMappingURL=B.js.map

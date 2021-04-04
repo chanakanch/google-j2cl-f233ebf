@@ -1,0 +1,101 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.nobridgemethods.CharSet.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.nobridgemethods.CharSet$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $1 = goog.forwardDeclare('com.google.j2cl.transpiler.readable.nobridgemethods.CharSet.$1$impl');
+
+
+class CharSet extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!CharSet}
+   * @public
+   */
+  static $create__() {
+    CharSet.$clinit();
+    let $instance = new CharSet();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_nobridgemethods_CharSet__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_nobridgemethods_CharSet__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @param {Array<?string>} args
+   * @return {void}
+   * @public
+   */
+  static m_main__arrayOf_java_lang_String(args) {
+    CharSet.$clinit();
+    let treeMap = $1.$create__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    CharSet.$clinit = (() => {});
+    CharSet.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof CharSet;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, CharSet);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $1 = goog.module.get(
+        'com.google.j2cl.transpiler.readable.nobridgemethods.CharSet.$1$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    CharSet,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.nobridgemethods.CharSet'));
+
+
+
+exports = CharSet;
+//# sourceMappingURL=CharSet.js.map

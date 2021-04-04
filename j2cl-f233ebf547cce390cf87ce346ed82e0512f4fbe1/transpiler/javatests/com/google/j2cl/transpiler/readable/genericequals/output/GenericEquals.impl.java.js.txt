@@ -1,0 +1,142 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.genericequals.GenericEquals.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.genericequals.GenericEquals$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
+let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
+let $Objects = goog.forwardDeclare('vmbootstrap.Objects$impl');
+
+
+/**
+ * @template T
+ */
+class GenericEquals extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {T} */
+    this.f_value__com_google_j2cl_transpiler_readable_genericequals_GenericEquals_;
+    /** @public {GenericEquals<T>} */
+    this.f_value2__com_google_j2cl_transpiler_readable_genericequals_GenericEquals_;
+  }
+
+  /**
+   * @template T
+   * @param {T} value
+   * @return {!GenericEquals<T>}
+   * @public
+   */
+  static $create__java_lang_Object(value) {
+    GenericEquals.$clinit();
+    let $instance = new GenericEquals();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_genericequals_GenericEquals__java_lang_Object(
+            value);
+    return $instance;
+  }
+
+  /**
+   * @param {T} value
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_genericequals_GenericEquals__java_lang_Object(
+      value) {
+    this.$ctor__java_lang_Object__();
+    this.f_value__com_google_j2cl_transpiler_readable_genericequals_GenericEquals_ =
+        value;
+    this.f_value2__com_google_j2cl_transpiler_readable_genericequals_GenericEquals_ =
+        null;
+  }
+
+  /**
+   * @param {GenericEquals<?>} other
+   * @return {*}
+   * @public
+   */
+  m_foo__com_google_j2cl_transpiler_readable_genericequals_GenericEquals(
+      other) {
+    return other
+        .f_value2__com_google_j2cl_transpiler_readable_genericequals_GenericEquals_
+        .f_value__com_google_j2cl_transpiler_readable_genericequals_GenericEquals_;
+  }
+
+  /**
+   * @override
+   * @param {*} obj
+   * @return {boolean}
+   * @public
+   */
+  equals(obj) {
+    if ($Equality.$same(obj, this)) {
+      return true;
+    }
+    if (!GenericEquals.$isInstance(obj)) {
+      return false;
+    }
+    let other = /**@type {GenericEquals<*>} */ ($Casts.$to(obj, GenericEquals));
+    return $Objects.m_equals__java_lang_Object__java_lang_Object(
+        this.f_value__com_google_j2cl_transpiler_readable_genericequals_GenericEquals_,
+        other
+            .f_value__com_google_j2cl_transpiler_readable_genericequals_GenericEquals_);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    GenericEquals.$clinit = (() => {});
+    GenericEquals.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof GenericEquals;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, GenericEquals);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $Equality = goog.module.get('nativebootstrap.Equality$impl');
+    $Casts = goog.module.get('vmbootstrap.Casts$impl');
+    $Objects = goog.module.get('vmbootstrap.Objects$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    GenericEquals,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.genericequals.GenericEquals'));
+
+
+
+exports = GenericEquals;
+//# sourceMappingURL=GenericEquals.js.map

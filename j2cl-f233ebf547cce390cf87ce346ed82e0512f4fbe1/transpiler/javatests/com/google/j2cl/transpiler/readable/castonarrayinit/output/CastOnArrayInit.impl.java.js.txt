@@ -1,0 +1,118 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.castonarrayinit.CastOnArrayInit.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.castonarrayinit.CastOnArrayInit$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Foo = goog.forwardDeclare('com.google.j2cl.transpiler.readable.castonarrayinit.CastOnArrayInit.Foo$impl');
+let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
+
+
+class CastOnArrayInit extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!CastOnArrayInit}
+   * @public
+   */
+  static $create__() {
+    CastOnArrayInit.$clinit();
+    let $instance = new CastOnArrayInit();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_castonarrayinit_CastOnArrayInit__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_castonarrayinit_CastOnArrayInit__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @template E
+   * @param {Array<Foo<E>>} args
+   * @return {void}
+   * @public
+   */
+  static m_fun__arrayOf_com_google_j2cl_transpiler_readable_castonarrayinit_CastOnArrayInit_Foo(
+      args) {
+    CastOnArrayInit.$clinit();
+  }
+
+  /**
+   * @template E
+   * @return {void}
+   * @public
+   */
+  static m_test__() {
+    CastOnArrayInit.$clinit();
+    let f1 = /**@type {!Foo<E>} */ (Foo.$create__());
+    let f2 = /**@type {!Foo<E>} */ (Foo.$create__());
+    CastOnArrayInit
+        .m_fun__arrayOf_com_google_j2cl_transpiler_readable_castonarrayinit_CastOnArrayInit_Foo(
+            /**@type {!Array<Foo<E>>} */ ($Arrays.$init([f1, f2], Foo)));
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    CastOnArrayInit.$clinit = (() => {});
+    CastOnArrayInit.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof CastOnArrayInit;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, CastOnArrayInit);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    Foo = goog.module.get(
+        'com.google.j2cl.transpiler.readable.castonarrayinit.CastOnArrayInit.Foo$impl');
+    $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    CastOnArrayInit,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.castonarrayinit.CastOnArrayInit'));
+
+
+
+exports = CastOnArrayInit;
+//# sourceMappingURL=CastOnArrayInit.js.map

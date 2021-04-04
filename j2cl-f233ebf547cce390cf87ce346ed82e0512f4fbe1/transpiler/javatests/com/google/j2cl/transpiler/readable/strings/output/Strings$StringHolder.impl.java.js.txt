@@ -1,0 +1,98 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.strings.Strings$StringHolder.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.strings.Strings.StringHolder$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class StringHolder extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {?string} */
+    this.f_s__com_google_j2cl_transpiler_readable_strings_Strings_StringHolder;
+  }
+
+  /**
+   * @return {!StringHolder}
+   * @public
+   */
+  static $create__() {
+    StringHolder.$clinit();
+    let $instance = new StringHolder();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_strings_Strings_StringHolder__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_strings_Strings_StringHolder__() {
+    this.$ctor__java_lang_Object__();
+    this.$init__com_google_j2cl_transpiler_readable_strings_Strings_StringHolder();
+  }
+
+  /**
+   * @return {void}
+   * @private
+   */
+  $init__com_google_j2cl_transpiler_readable_strings_Strings_StringHolder() {
+    this.f_s__com_google_j2cl_transpiler_readable_strings_Strings_StringHolder =
+        'A';
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    StringHolder.$clinit = (() => {});
+    StringHolder.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof StringHolder;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, StringHolder);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    StringHolder,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.strings.Strings$StringHolder'));
+
+
+
+exports = StringHolder;
+//# sourceMappingURL=Strings$StringHolder.js.map

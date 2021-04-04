@@ -1,0 +1,102 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.jsoverlay.Main$NativeJsTypeInterfaceWithOverlayImpl.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.jsoverlay.Main.NativeJsTypeInterfaceWithOverlayImpl$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+const NativeJsTypeInterfaceWithOverlay = goog.require('test.foo.NativeJsTypeInterfaceWithOverlay');
+
+let $Overlay = goog.forwardDeclare('com.google.j2cl.transpiler.readable.jsoverlay.Main.NativeJsTypeInterfaceWithOverlay.$Overlay$impl');
+
+
+/**
+ * @implements {NativeJsTypeInterfaceWithOverlay}
+ */
+class NativeJsTypeInterfaceWithOverlayImpl extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!NativeJsTypeInterfaceWithOverlayImpl}
+   * @public
+   */
+  static $create__() {
+    NativeJsTypeInterfaceWithOverlayImpl.$clinit();
+    let $instance = new NativeJsTypeInterfaceWithOverlayImpl();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_jsoverlay_Main_NativeJsTypeInterfaceWithOverlayImpl__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_jsoverlay_Main_NativeJsTypeInterfaceWithOverlayImpl__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @override
+   * @return {number}
+   * @public
+   */
+  m() {
+    return 0;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    NativeJsTypeInterfaceWithOverlayImpl.$clinit = (() => {});
+    NativeJsTypeInterfaceWithOverlayImpl.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof NativeJsTypeInterfaceWithOverlayImpl;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(
+        classConstructor, NativeJsTypeInterfaceWithOverlayImpl);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    NativeJsTypeInterfaceWithOverlayImpl,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.jsoverlay.Main$NativeJsTypeInterfaceWithOverlayImpl'));
+
+
+
+exports = NativeJsTypeInterfaceWithOverlayImpl;
+//# sourceMappingURL=Main$NativeJsTypeInterfaceWithOverlayImpl.js.map

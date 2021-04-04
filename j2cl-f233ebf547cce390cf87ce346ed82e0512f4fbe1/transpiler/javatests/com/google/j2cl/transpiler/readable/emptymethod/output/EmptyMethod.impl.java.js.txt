@@ -1,0 +1,95 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.emptymethod.EmptyMethod.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.emptymethod.EmptyMethod$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class EmptyMethod extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!EmptyMethod}
+   * @public
+   */
+  static $create__() {
+    EmptyMethod.$clinit();
+    let $instance = new EmptyMethod();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_emptymethod_EmptyMethod__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_emptymethod_EmptyMethod__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @param {Array<?string>} args
+   * @return {void}
+   * @public
+   */
+  static m_main__arrayOf_java_lang_String(args) {
+    EmptyMethod.$clinit();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    EmptyMethod.$clinit = (() => {});
+    EmptyMethod.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof EmptyMethod;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, EmptyMethod);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    EmptyMethod,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.emptymethod.EmptyMethod'));
+
+
+
+exports = EmptyMethod;
+//# sourceMappingURL=EmptyMethod.js.map

@@ -1,0 +1,100 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.anonymousclass.SomeInterface$1.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.anonymousclass.SomeInterface.$1$impl');
+
+
+const SomeClass = goog.require('com.google.j2cl.transpiler.readable.anonymousclass.SomeClass$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class $1 extends SomeClass {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @param {number} $_0
+   * @return {!$1}
+   * @public
+   */
+  static $create__int($_0) {
+    $1.$clinit();
+    let $instance = new $1();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_anonymousclass_SomeInterface_1__int(
+            $_0);
+    return $instance;
+  }
+
+  /**
+   * @param {number} $_0
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_anonymousclass_SomeInterface_1__int(
+      $_0) {
+    this.$ctor__com_google_j2cl_transpiler_readable_anonymousclass_SomeClass__int(
+        $_0);
+  }
+
+  /**
+   * @override
+   * @return {?string}
+   * @public
+   */
+  m_foo__() {
+    return 'a';
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    $1.$clinit = (() => {});
+    $1.$loadModules();
+    SomeClass.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof $1;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, $1);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    $1,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.anonymousclass.SomeInterface$1'));
+
+
+
+exports = $1;
+//# sourceMappingURL=SomeInterface$1.js.map

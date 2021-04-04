@@ -1,0 +1,182 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.interfacedevirtualize.InterfaceDevirtualize.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.interfacedevirtualize.InterfaceDevirtualize$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Boolean = goog.forwardDeclare('java.lang.Boolean$impl');
+let Comparable = goog.forwardDeclare('java.lang.Comparable$impl');
+let Double = goog.forwardDeclare('java.lang.Double$impl');
+let Integer = goog.forwardDeclare('java.lang.Integer$impl');
+let $Comparables = goog.forwardDeclare('vmbootstrap.Comparables$impl');
+
+
+class InterfaceDevirtualize extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!InterfaceDevirtualize}
+   * @public
+   */
+  static $create__() {
+    InterfaceDevirtualize.$clinit();
+    let $instance = new InterfaceDevirtualize();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_interfacedevirtualize_InterfaceDevirtualize__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_interfacedevirtualize_InterfaceDevirtualize__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @template T
+   * @param {(Comparable<T>|boolean|number|string)} c
+   * @param {T} t
+   * @return {number}
+   * @public
+   */
+  m_compare0__java_lang_Comparable__java_lang_Object(c, t) {
+    return $Comparables.m_compareTo__java_lang_Comparable__java_lang_Object(
+        c, t);
+  }
+
+  /**
+   * @param {(Comparable|boolean|number|string)} c
+   * @param {*} o
+   * @return {number}
+   * @public
+   */
+  m_compare1__java_lang_Comparable__java_lang_Object(c, o) {
+    return $Comparables.m_compareTo__java_lang_Comparable__java_lang_Object(
+        c, o);
+  }
+
+  /**
+   * @param {(Comparable<?number>|boolean|number|string)} c
+   * @param {?number} d
+   * @return {number}
+   * @public
+   */
+  m_compare2__java_lang_Comparable__java_lang_Double(c, d) {
+    return $Comparables.m_compareTo__java_lang_Comparable__java_lang_Object(
+        c, d);
+  }
+
+  /**
+   * @param {?number} d1
+   * @param {?number} d2
+   * @return {number}
+   * @public
+   */
+  m_compare3__java_lang_Double__java_lang_Double(d1, d2) {
+    return Double.m_compareTo__java_lang_Double__java_lang_Double(d1, d2);
+  }
+
+  /**
+   * @param {(Comparable<?boolean>|boolean|number|string)} c
+   * @param {?boolean} d
+   * @return {number}
+   * @public
+   */
+  m_compare2__java_lang_Comparable__java_lang_Boolean(c, d) {
+    return $Comparables.m_compareTo__java_lang_Comparable__java_lang_Object(
+        c, d);
+  }
+
+  /**
+   * @param {?boolean} d1
+   * @param {?boolean} d2
+   * @return {number}
+   * @public
+   */
+  m_compare3__java_lang_Boolean__java_lang_Boolean(d1, d2) {
+    return Boolean.m_compareTo__java_lang_Boolean__java_lang_Boolean(d1, d2);
+  }
+
+  /**
+   * @param {(Comparable<Integer>|boolean|number|string)} c
+   * @param {Integer} d
+   * @return {number}
+   * @public
+   */
+  m_compare2__java_lang_Comparable__java_lang_Integer(c, d) {
+    return $Comparables.m_compareTo__java_lang_Comparable__java_lang_Object(
+        c, d);
+  }
+
+  /**
+   * @param {Integer} d1
+   * @param {Integer} d2
+   * @return {number}
+   * @public
+   */
+  m_compare3__java_lang_Integer__java_lang_Integer(d1, d2) {
+    return d1.m_compareTo__java_lang_Integer(d2);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    InterfaceDevirtualize.$clinit = (() => {});
+    InterfaceDevirtualize.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof InterfaceDevirtualize;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, InterfaceDevirtualize);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    Boolean = goog.module.get('java.lang.Boolean$impl');
+    Double = goog.module.get('java.lang.Double$impl');
+    $Comparables = goog.module.get('vmbootstrap.Comparables$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    InterfaceDevirtualize,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.interfacedevirtualize.InterfaceDevirtualize'));
+
+
+
+exports = InterfaceDevirtualize;
+//# sourceMappingURL=InterfaceDevirtualize.js.map

@@ -1,0 +1,24 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents.
+ *
+ * @suppress {extraRequire, lateProvide, unusedLocalVariables,
+ * strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents');
+
+
+// Imports headers for both eager and lazy dependencies to ensure that
+// all files are included in the dependency tree.
+const _j_l_Object = goog.require('java.lang.Object');
+const _$Util = goog.require('nativebootstrap.Util');
+const _ArrayList = goog.require('com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents.ArrayList');
+const _IStringList = goog.require('com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents.IStringList');
+const _StringList = goog.require('com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents.StringList');
+const _j_l_String = goog.require('java.lang.String');
+const _$Asserts = goog.require('vmbootstrap.Asserts');
+
+
+// Re-exports the implementation.
+var MultipleAbstractParents = goog.require('com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents$impl');
+exports = MultipleAbstractParents;

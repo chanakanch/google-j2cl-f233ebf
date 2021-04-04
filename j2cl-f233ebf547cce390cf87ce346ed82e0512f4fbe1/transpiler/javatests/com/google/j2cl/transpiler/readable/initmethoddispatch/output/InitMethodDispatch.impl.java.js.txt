@@ -1,0 +1,125 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.initmethoddispatch.InitMethodDispatch.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.initmethoddispatch.InitMethodDispatch$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @template T
+ */
+class InitMethodDispatch extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {number} */
+    this.f_value__com_google_j2cl_transpiler_readable_initmethoddispatch_InitMethodDispatch =
+        0;
+  }
+
+  /**
+   * Factory method corresponding to constructor 'InitMethodDispatch()'.
+   * @template T
+   * @return {!InitMethodDispatch<T>}
+   * @public
+   */
+  static $create__() {
+    InitMethodDispatch.$clinit();
+    let $instance = new InitMethodDispatch();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_initmethoddispatch_InitMethodDispatch__();
+    return $instance;
+  }
+
+  /**
+   * Initialization from constructor 'InitMethodDispatch()'.
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_initmethoddispatch_InitMethodDispatch__() {
+    this.$ctor__com_google_j2cl_transpiler_readable_initmethoddispatch_InitMethodDispatch__int(
+        1);
+  }
+
+  /**
+   * Factory method corresponding to constructor 'InitMethodDispatch(int)'.
+   * @template T
+   * @param {number} i
+   * @return {!InitMethodDispatch<T>}
+   * @public
+   */
+  static $create__int(i) {
+    InitMethodDispatch.$clinit();
+    let $instance = new InitMethodDispatch();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_initmethoddispatch_InitMethodDispatch__int(
+            i);
+    return $instance;
+  }
+
+  /**
+   * Initialization from constructor 'InitMethodDispatch(int)'.
+   * @param {number} i
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_initmethoddispatch_InitMethodDispatch__int(
+      i) {
+    this.$ctor__java_lang_Object__();
+    this.f_value__com_google_j2cl_transpiler_readable_initmethoddispatch_InitMethodDispatch =
+        i;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    InitMethodDispatch.$clinit = (() => {});
+    InitMethodDispatch.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof InitMethodDispatch;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, InitMethodDispatch);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    InitMethodDispatch,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.initmethoddispatch.InitMethodDispatch'));
+
+
+
+exports = InitMethodDispatch;
+//# sourceMappingURL=InitMethodDispatch.js.map

@@ -1,0 +1,97 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder$Outer$TestQualifiedSuperCall.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.Outer.TestQualifiedSuperCall$impl');
+
+
+const OuterIsNotSuper = goog.require('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.Outer.OuterIsNotSuper$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Outer = goog.forwardDeclare('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.Outer$impl');
+let OuterIsSuper = goog.forwardDeclare('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.Outer.OuterIsSuper$impl');
+
+
+class TestQualifiedSuperCall extends OuterIsNotSuper {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!TestQualifiedSuperCall}
+   * @public
+   */
+  static $create__() {
+    TestQualifiedSuperCall.$clinit();
+    let $instance = new TestQualifiedSuperCall();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_Outer_TestQualifiedSuperCall__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_Outer_TestQualifiedSuperCall__() {
+    this.$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_Outer_OuterIsNotSuper__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_Outer(
+        OuterIsSuper
+            .$create__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_Outer__int(
+                Outer.$create__int(1), 2));
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    TestQualifiedSuperCall.$clinit = (() => {});
+    TestQualifiedSuperCall.$loadModules();
+    OuterIsNotSuper.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof TestQualifiedSuperCall;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, TestQualifiedSuperCall);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    Outer = goog.module.get(
+        'com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.Outer$impl');
+    OuterIsSuper = goog.module.get(
+        'com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.Outer.OuterIsSuper$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    TestQualifiedSuperCall,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder$Outer$TestQualifiedSuperCall'));
+
+
+
+exports = TestQualifiedSuperCall;
+//# sourceMappingURL=InnerClassInitOrder$Outer$TestQualifiedSuperCall.js.map

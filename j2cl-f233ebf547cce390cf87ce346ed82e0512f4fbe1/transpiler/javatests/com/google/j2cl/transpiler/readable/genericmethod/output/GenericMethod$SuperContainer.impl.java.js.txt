@@ -1,0 +1,101 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.genericmethod.GenericMethod$SuperContainer.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.genericmethod.GenericMethod.SuperContainer$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Container = goog.forwardDeclare('com.google.j2cl.transpiler.readable.genericmethod.GenericMethod.Container$impl');
+let Content = goog.forwardDeclare('com.google.j2cl.transpiler.readable.genericmethod.GenericMethod.Content$impl');
+
+
+/**
+ * @template C
+ */
+class SuperContainer extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @template C
+   * @return {!SuperContainer<C>}
+   * @public
+   */
+  static $create__() {
+    SuperContainer.$clinit();
+    let $instance = new SuperContainer();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_genericmethod_GenericMethod_SuperContainer__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_genericmethod_GenericMethod_SuperContainer__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {C}
+   * @public
+   */
+  m_get___$pp_com_google_j2cl_transpiler_readable_genericmethod() {
+    return null;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    SuperContainer.$clinit = (() => {});
+    SuperContainer.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof SuperContainer;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, SuperContainer);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    SuperContainer,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.genericmethod.GenericMethod$SuperContainer'));
+
+
+
+exports = SuperContainer;
+//# sourceMappingURL=GenericMethod$SuperContainer.js.map

@@ -1,0 +1,104 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.simplebridgemethods.Callable$$LambdaAdaptor.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.simplebridgemethods.Callable.$LambdaAdaptor$impl');
+
+
+const Callable = goog.require('com.google.j2cl.transpiler.readable.simplebridgemethods.Callable$impl');
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @template V
+ * @implements {Callable<V>}
+ */
+class $LambdaAdaptor extends j_l_Object {
+  /**
+   * @param {?function(V):void} fn
+   * @public
+   */
+  constructor(fn) {
+    $LambdaAdaptor.$clinit();
+    super();
+    /** @public {?function(V):void} */
+    this.f_$$fn__com_google_j2cl_transpiler_readable_simplebridgemethods_Callable_$LambdaAdaptor;
+    this.$ctor__com_google_j2cl_transpiler_readable_simplebridgemethods_Callable_$LambdaAdaptor__com_google_j2cl_transpiler_readable_simplebridgemethods_Callable_$JsFunction(
+        fn);
+  }
+
+  /**
+   * @param {?function(V):void} fn
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_simplebridgemethods_Callable_$LambdaAdaptor__com_google_j2cl_transpiler_readable_simplebridgemethods_Callable_$JsFunction(
+      fn) {
+    this.$ctor__java_lang_Object__();
+    this.f_$$fn__com_google_j2cl_transpiler_readable_simplebridgemethods_Callable_$LambdaAdaptor =
+        fn;
+  }
+
+  /**
+   * @param {V} arg0
+   * @return {void}
+   * @public
+   */
+  m_call__java_lang_Object(arg0) {
+    {
+      let $function =
+          this.f_$$fn__com_google_j2cl_transpiler_readable_simplebridgemethods_Callable_$LambdaAdaptor;
+      $function(arg0);
+    }
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    $LambdaAdaptor.$clinit = (() => {});
+    $LambdaAdaptor.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof $LambdaAdaptor;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, $LambdaAdaptor);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    $LambdaAdaptor,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.simplebridgemethods.Callable$$LambdaAdaptor'));
+
+
+Callable.$markImplementor($LambdaAdaptor);
+
+
+exports = $LambdaAdaptor;
+//# sourceMappingURL=Callable$$LambdaAdaptor.js.map

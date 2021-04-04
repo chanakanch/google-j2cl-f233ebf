@@ -1,0 +1,110 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.equality.Equality.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.equality.Equality$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
+let $Asserts = goog.forwardDeclare('vmbootstrap.Asserts$impl');
+
+
+class Equality extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!Equality}
+   * @public
+   */
+  static $create__() {
+    Equality.$clinit();
+    let $instance = new Equality();
+    $instance.$ctor__com_google_j2cl_transpiler_readable_equality_Equality__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_equality_Equality__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_test__() {
+    {
+      $Asserts.$assert(false == false);
+      $Asserts.$assert(0 != 1);
+    }
+    {
+      $Asserts.$assert(
+          !$Equality.$same(j_l_Object.$create__(), j_l_Object.$create__()));
+    }
+    {
+      $Asserts.$assert(!$Equality.$same(null, j_l_Object.$create__()));
+      $Asserts.$assert(!$Equality.$same(j_l_Object.$create__(), null));
+    }
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Equality.$clinit = (() => {});
+    Equality.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof Equality;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, Equality);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $Equality = goog.module.get('nativebootstrap.Equality$impl');
+    $Asserts = goog.module.get('vmbootstrap.Asserts$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    Equality,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.equality.Equality'));
+
+
+
+exports = Equality;
+//# sourceMappingURL=Equality.js.map

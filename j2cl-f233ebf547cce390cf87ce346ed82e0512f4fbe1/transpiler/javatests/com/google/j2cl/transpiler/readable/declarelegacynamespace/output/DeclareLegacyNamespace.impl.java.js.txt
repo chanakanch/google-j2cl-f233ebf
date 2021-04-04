@@ -1,0 +1,86 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.declarelegacynamespace.DeclareLegacyNamespace.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.declarelegacynamespace.DeclareLegacyNamespace$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class DeclareLegacyNamespace extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!DeclareLegacyNamespace}
+   * @public
+   */
+  static $create__() {
+    DeclareLegacyNamespace.$clinit();
+    let $instance = new DeclareLegacyNamespace();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_declarelegacynamespace_DeclareLegacyNamespace__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_declarelegacynamespace_DeclareLegacyNamespace__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    DeclareLegacyNamespace.$clinit = (() => {});
+    DeclareLegacyNamespace.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof DeclareLegacyNamespace;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, DeclareLegacyNamespace);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    DeclareLegacyNamespace,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.declarelegacynamespace.DeclareLegacyNamespace'));
+
+
+
+exports = DeclareLegacyNamespace;
+//# sourceMappingURL=DeclareLegacyNamespace.js.map

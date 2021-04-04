@@ -1,0 +1,119 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.jsconstructor.JsConstructorClass$D.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.jsconstructor.JsConstructorClass.D$impl');
+
+
+const B = goog.require('com.google.j2cl.transpiler.readable.jsconstructor.JsConstructorClass.B$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class D extends B {
+  /**
+   * JsConstructor 'D()'.
+   * @public
+   */
+  constructor() {
+    D.$clinit();
+    super(9);
+    /** @public {number} */
+    this.f_fD__com_google_j2cl_transpiler_readable_jsconstructor_JsConstructorClass_D =
+        0;
+    this.$ctor__com_google_j2cl_transpiler_readable_jsconstructor_JsConstructorClass_D__();
+  }
+
+  /**
+   * Initialization from constructor 'D()'.
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_jsconstructor_JsConstructorClass_D__() {
+    this.$init__com_google_j2cl_transpiler_readable_jsconstructor_JsConstructorClass_D();
+    this.f_fD__com_google_j2cl_transpiler_readable_jsconstructor_JsConstructorClass_D =
+        10;
+  }
+
+  /**
+   * Factory method corresponding to constructor 'D(int)'.
+   * @param {number} x
+   * @return {!D}
+   * @public
+   */
+  static $create__int(x) {
+    D.$clinit();
+    let $instance = new D();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_jsconstructor_JsConstructorClass_D__int(
+            x);
+    return $instance;
+  }
+
+  /**
+   * Initialization from constructor 'D(int)'.
+   * @param {number} x
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_jsconstructor_JsConstructorClass_D__int(
+      x) {
+    this.f_fD__com_google_j2cl_transpiler_readable_jsconstructor_JsConstructorClass_D =
+        x;
+  }
+
+  /**
+   * @return {void}
+   * @private
+   */
+  $init__com_google_j2cl_transpiler_readable_jsconstructor_JsConstructorClass_D() {
+    this.f_fD__com_google_j2cl_transpiler_readable_jsconstructor_JsConstructorClass_D =
+        8;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    D.$clinit = (() => {});
+    D.$loadModules();
+    B.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof D;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, D);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    D,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.jsconstructor.JsConstructorClass$D'));
+
+
+
+exports = D;
+//# sourceMappingURL=JsConstructorClass$D.js.map

@@ -1,0 +1,101 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder$ESOuter.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.ESOuter$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let ESInner = goog.forwardDeclare('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.ESOuter.ESInner$impl');
+
+
+class ESOuter extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!ESOuter}
+   * @public
+   */
+  static $create__() {
+    ESOuter.$clinit();
+    let $instance = new ESOuter();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESOuter__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESOuter__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {ESInner}
+   * @public
+   */
+  m_newESInner__() {
+    return ESInner
+        .$create__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESOuter(
+            this);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    ESOuter.$clinit = (() => {});
+    ESOuter.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof ESOuter;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, ESOuter);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    ESInner = goog.module.get(
+        'com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.ESOuter.ESInner$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    ESOuter,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder$ESOuter'));
+
+
+
+exports = ESOuter;
+//# sourceMappingURL=InnerClassInitOrder$ESOuter.js.map

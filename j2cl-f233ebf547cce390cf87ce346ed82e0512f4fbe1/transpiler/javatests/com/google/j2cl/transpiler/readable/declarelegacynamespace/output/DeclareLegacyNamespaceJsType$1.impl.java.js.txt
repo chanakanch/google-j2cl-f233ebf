@@ -1,0 +1,84 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.declarelegacynamespace.DeclareLegacyNamespaceJsType$1.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.declarelegacynamespace.DeclareLegacyNamespaceJsType.$1$impl');
+
+
+const DeclareLegacyNamespaceJsType = goog.require('com.google.j2cl.transpiler.readable.declarelegacynamespace.DeclareLegacyNamespaceJsType$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class $1 extends DeclareLegacyNamespaceJsType {
+  /**
+   * @public
+   */
+  constructor() {
+    $1.$clinit();
+    super();
+    this.$ctor__com_google_j2cl_transpiler_readable_declarelegacynamespace_DeclareLegacyNamespaceJsType_1__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_declarelegacynamespace_DeclareLegacyNamespaceJsType_1__() {
+  }
+
+  /**
+   * @override
+   * @return {boolean}
+   * @public
+   */
+  foo() {
+    return true;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    $1.$clinit = (() => {});
+    $1.$loadModules();
+    DeclareLegacyNamespaceJsType.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof $1;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, $1);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    $1,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.declarelegacynamespace.DeclareLegacyNamespaceJsType$1'));
+
+
+
+exports = $1;
+//# sourceMappingURL=DeclareLegacyNamespaceJsType$1.js.map

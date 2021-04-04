@@ -1,0 +1,103 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.nestedgenericclass.NestedGenericClass$1F.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.nestedgenericclass.NestedGenericClass.$1F$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let NestedGenericClass = goog.forwardDeclare('com.google.j2cl.transpiler.readable.nestedgenericclass.NestedGenericClass$impl');
+
+
+/**
+ * @template S, T
+ */
+class $1F extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {NestedGenericClass<T>} */
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_nestedgenericclass_NestedGenericClass_1F;
+    /** @public {S} */
+    this.f_f__com_google_j2cl_transpiler_readable_nestedgenericclass_NestedGenericClass_1F;
+  }
+
+  /**
+   * @template S, T
+   * @param {NestedGenericClass<T>} $outer_this
+   * @return {!$1F<S, T>}
+   * @public
+   */
+  static $create__com_google_j2cl_transpiler_readable_nestedgenericclass_NestedGenericClass(
+      $outer_this) {
+    $1F.$clinit();
+    let $instance = new $1F();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_nestedgenericclass_NestedGenericClass_1F__com_google_j2cl_transpiler_readable_nestedgenericclass_NestedGenericClass(
+            $outer_this);
+    return $instance;
+  }
+
+  /**
+   * @param {NestedGenericClass<T>} $outer_this
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_nestedgenericclass_NestedGenericClass_1F__com_google_j2cl_transpiler_readable_nestedgenericclass_NestedGenericClass(
+      $outer_this) {
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_nestedgenericclass_NestedGenericClass_1F =
+        $outer_this;
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    $1F.$clinit = (() => {});
+    $1F.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof $1F;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, $1F);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    $1F,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.nestedgenericclass.NestedGenericClass$1F'));
+
+
+
+exports = $1F;
+//# sourceMappingURL=NestedGenericClass$1F.js.map

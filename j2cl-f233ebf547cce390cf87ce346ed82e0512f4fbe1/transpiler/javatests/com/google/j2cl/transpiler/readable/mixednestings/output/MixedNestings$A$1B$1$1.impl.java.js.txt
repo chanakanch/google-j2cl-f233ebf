@@ -1,0 +1,113 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.mixednestings.MixedNestings$A$1B$1$1.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.mixednestings.MixedNestings.A.$1B.$1.$1$impl');
+
+
+const MyInterface = goog.require('com.google.j2cl.transpiler.readable.mixednestings.MyInterface$impl');
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $1 = goog.forwardDeclare('com.google.j2cl.transpiler.readable.mixednestings.MixedNestings.A.$1B.$1$impl');
+
+
+/**
+ * @implements {MyInterface}
+ */
+class $1_$1 extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {$1} */
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_mixednestings_MixedNestings_A_1B_1_1;
+  }
+
+  /**
+   * @param {$1} $outer_this
+   * @return {!$1_$1}
+   * @public
+   */
+  static $create__com_google_j2cl_transpiler_readable_mixednestings_MixedNestings_A_1B_1(
+      $outer_this) {
+    $1_$1.$clinit();
+    let $instance = new $1_$1();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_mixednestings_MixedNestings_A_1B_1_1__com_google_j2cl_transpiler_readable_mixednestings_MixedNestings_A_1B_1(
+            $outer_this);
+    return $instance;
+  }
+
+  /**
+   * @param {$1} $outer_this
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_mixednestings_MixedNestings_A_1B_1_1__com_google_j2cl_transpiler_readable_mixednestings_MixedNestings_A_1B_1(
+      $outer_this) {
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_mixednestings_MixedNestings_A_1B_1_1 =
+        $outer_this;
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @override
+   * @param {number} b
+   * @return {number}
+   * @public
+   */
+  m_fun__int(b) {
+    return b;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    $1_$1.$clinit = (() => {});
+    $1_$1.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof $1_$1;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, $1_$1);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    $1_$1,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.mixednestings.MixedNestings$A$1B$1$1'));
+
+
+MyInterface.$markImplementor($1_$1);
+
+
+exports = $1_$1;
+//# sourceMappingURL=MixedNestings$A$1B$1$1.js.map

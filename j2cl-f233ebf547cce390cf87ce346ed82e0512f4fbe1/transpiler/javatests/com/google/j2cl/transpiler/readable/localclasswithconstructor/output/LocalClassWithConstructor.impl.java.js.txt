@@ -1,0 +1,103 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.localclasswithconstructor.LocalClassWithConstructor.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.localclasswithconstructor.LocalClassWithConstructor$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $1LocalClass = goog.forwardDeclare('com.google.j2cl.transpiler.readable.localclasswithconstructor.LocalClassWithConstructor.$1LocalClass$impl');
+
+
+class LocalClassWithConstructor extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!LocalClassWithConstructor}
+   * @public
+   */
+  static $create__() {
+    LocalClassWithConstructor.$clinit();
+    let $instance = new LocalClassWithConstructor();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_localclasswithconstructor_LocalClassWithConstructor__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_localclasswithconstructor_LocalClassWithConstructor__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @param {number} p
+   * @return {void}
+   * @public
+   */
+  m_test__int(p) {
+    let localVar = 1;
+    $1LocalClass
+        .$create__com_google_j2cl_transpiler_readable_localclasswithconstructor_LocalClassWithConstructor__int__int__int(
+            this, localVar, p, 1);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    LocalClassWithConstructor.$clinit = (() => {});
+    LocalClassWithConstructor.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof LocalClassWithConstructor;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, LocalClassWithConstructor);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $1LocalClass = goog.module.get(
+        'com.google.j2cl.transpiler.readable.localclasswithconstructor.LocalClassWithConstructor.$1LocalClass$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    LocalClassWithConstructor,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.localclasswithconstructor.LocalClassWithConstructor'));
+
+
+
+exports = LocalClassWithConstructor;
+//# sourceMappingURL=LocalClassWithConstructor.js.map

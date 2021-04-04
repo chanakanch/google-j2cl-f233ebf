@@ -1,0 +1,92 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.jsproperties.NativeFoo.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.jsproperties.NativeFoo$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class NativeFoo extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!NativeFoo}
+   * @public
+   */
+  static $create__() {
+    NativeFoo.$clinit();
+    let $instance = new NativeFoo();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_jsproperties_NativeFoo__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_jsproperties_NativeFoo__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {*}
+   * @public
+   */
+  // native get hasOwnProperty()
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    NativeFoo.$clinit = (() => {});
+    NativeFoo.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof NativeFoo;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, NativeFoo);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    NativeFoo,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.jsproperties.NativeFoo'));
+
+
+
+exports = NativeFoo;
+//# sourceMappingURL=NativeFoo.js.map

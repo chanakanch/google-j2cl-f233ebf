@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package j2cl;
+
+option java_multiple_files = true;
+option java_package = "com.google.j2cl.libraryinfo";
+
+message LibraryInfo {
+  repeated TypeInfo type = 1;
+}
+
+message TypeInfo {
+  string type_id = 1;
+  string extends_type = 2;
+  repeated string implements_type = 3;
+  repeated MemberInfo member = 4;
+  string header_source_file_path = 5;
+  string impl_source_file_path = 6;
+}
+
+message MemberInfo {
+  string name = 1;
+  bool public = 2;
+  bool static = 3;
+  bool js_accessible = 4;
+  repeated MethodInvocation invoked_methods = 5;
+  repeated string referenced_types = 6;
+  FilePosition start_position = 7;
+  FilePosition end_position = 8;
+}
+
+enum InvocationKind {
+  DYNAMIC = 0;
+  STATIC = 1;
+  INSTANTIATION = 2;
+}
+
+message MethodInvocation {
+  string method = 1;
+  string enclosing_type = 2;
+  InvocationKind kind = 3;
+}
+
+message FilePosition {
+  int32 line = 1;
+  int32 column = 2;
+}

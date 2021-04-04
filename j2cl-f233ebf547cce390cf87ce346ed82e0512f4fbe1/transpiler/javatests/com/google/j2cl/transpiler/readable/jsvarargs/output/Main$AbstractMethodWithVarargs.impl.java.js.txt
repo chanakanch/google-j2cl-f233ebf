@@ -1,0 +1,87 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.jsvarargs.Main$AbstractMethodWithVarargs.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.jsvarargs.Main.AbstractMethodWithVarargs$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @abstract
+ */
+class AbstractMethodWithVarargs extends j_l_Object {
+  /**
+   * @public
+   */
+  constructor() {
+    AbstractMethodWithVarargs.$clinit();
+    super();
+    this.$ctor__com_google_j2cl_transpiler_readable_jsvarargs_Main_AbstractMethodWithVarargs__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_jsvarargs_Main_AbstractMethodWithVarargs__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @abstract
+   * @param {...number} args
+   * @return {void}
+   * @public
+   */
+  abstractMethod(...args) {}
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    AbstractMethodWithVarargs.$clinit = (() => {});
+    AbstractMethodWithVarargs.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof AbstractMethodWithVarargs;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, AbstractMethodWithVarargs);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    AbstractMethodWithVarargs,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.jsvarargs.Main$AbstractMethodWithVarargs'));
+
+
+
+exports = AbstractMethodWithVarargs;
+//# sourceMappingURL=Main$AbstractMethodWithVarargs.js.map

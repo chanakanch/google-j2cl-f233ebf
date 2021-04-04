@@ -1,0 +1,231 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.instancequalifieronstaticfield.InstanceQualifiers.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.instancequalifieronstaticfield.InstanceQualifiers$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class InstanceQualifiers extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!InstanceQualifiers}
+   * @public
+   */
+  static $create__() {
+    InstanceQualifiers.$clinit();
+    let $instance = new InstanceQualifiers();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {number}
+   * @public
+   */
+  static m_getStaticValue__() {
+    InstanceQualifiers.$clinit();
+    return InstanceQualifiers
+        .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers;
+  }
+
+  /**
+   * @return {InstanceQualifiers}
+   * @public
+   */
+  static m_getStaticInstanceQualifiers__() {
+    InstanceQualifiers.$clinit();
+    return null;
+  }
+
+  /**
+   * @param {Array<?string>} args
+   * @return {void}
+   * @public
+   */
+  static m_main__arrayOf_java_lang_String(args) {
+    InstanceQualifiers.$clinit();
+    let main = InstanceQualifiers.$create__();
+    let i = 0;
+    {
+      InstanceQualifiers
+          .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers =
+          100;
+    }
+    {
+      InstanceQualifiers
+          .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers =
+          100;
+      {
+        InstanceQualifiers.m_getStaticInstanceQualifiers__();
+        InstanceQualifiers
+            .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers =
+            300;
+      }
+    }
+    {
+      i =
+          (main,
+           InstanceQualifiers
+               .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers);
+      i = (main, InstanceQualifiers.m_getStaticValue__());
+      i =
+          (main, InstanceQualifiers.m_getStaticInstanceQualifiers__(),
+           InstanceQualifiers
+               .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers);
+    }
+    {
+      InstanceQualifiers
+          .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers +=
+          100;
+      {
+        InstanceQualifiers.m_getStaticInstanceQualifiers__();
+        InstanceQualifiers
+            .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers +=
+            100;
+      }
+    }
+    {
+      {
+        InstanceQualifiers.m_getStaticInstanceQualifiers__();
+        InstanceQualifiers.m_getStaticInstanceQualifiers__();
+        InstanceQualifiers
+            .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers +=
+            (main, InstanceQualifiers.m_getStaticInstanceQualifiers__(),
+             InstanceQualifiers.m_getStaticInstanceQualifiers__(),
+             InstanceQualifiers.m_getStaticValue__());
+      }
+    }
+  }
+
+  /**
+   * @return {number}
+   * @public
+   */
+  static get f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers() {
+    return (
+        InstanceQualifiers.$clinit(),
+        InstanceQualifiers
+            .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers);
+  }
+
+  /**
+   * @param {number} value
+   * @return {void}
+   * @public
+   */
+  static set f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers(
+      value) {
+    (InstanceQualifiers.$clinit(),
+     InstanceQualifiers
+         .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers =
+         value);
+  }
+
+  /**
+   * @return {number}
+   * @public
+   */
+  static get f_sideEffectCount__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers() {
+    return (
+        InstanceQualifiers.$clinit(),
+        InstanceQualifiers
+            .$f_sideEffectCount__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers);
+  }
+
+  /**
+   * @param {number} value
+   * @return {void}
+   * @public
+   */
+  static set f_sideEffectCount__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers(
+      value) {
+    (InstanceQualifiers.$clinit(),
+     InstanceQualifiers
+         .$f_sideEffectCount__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers =
+         value);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    InstanceQualifiers.$clinit = (() => {});
+    InstanceQualifiers.$loadModules();
+    j_l_Object.$clinit();
+    InstanceQualifiers
+        .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers =
+        100;
+    InstanceQualifiers
+        .$f_sideEffectCount__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers =
+        0;
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof InstanceQualifiers;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, InstanceQualifiers);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    InstanceQualifiers,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.instancequalifieronstaticfield.InstanceQualifiers'));
+
+
+/** @private {number} */
+InstanceQualifiers
+    .$f_staticField__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers =
+    0;
+
+
+/** @private {number} */
+InstanceQualifiers
+    .$f_sideEffectCount__com_google_j2cl_transpiler_readable_instancequalifieronstaticfield_InstanceQualifiers =
+    0;
+
+
+
+exports = InstanceQualifiers;
+//# sourceMappingURL=InstanceQualifiers.js.map

@@ -1,0 +1,103 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.jsbridgebackward.InterfaceImpl.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.jsbridgebackward.InterfaceImpl$impl');
+
+
+const A = goog.require('com.google.j2cl.transpiler.readable.jsbridgebackward.A$impl');
+const MyJsInterface = goog.require('com.google.j2cl.transpiler.readable.jsbridgebackward.MyJsInterface$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @implements {MyJsInterface}
+ */
+class InterfaceImpl extends A {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!InterfaceImpl}
+   * @public
+   */
+  static $create__() {
+    InterfaceImpl.$clinit();
+    let $instance = new InterfaceImpl();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_jsbridgebackward_InterfaceImpl__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_jsbridgebackward_InterfaceImpl__() {
+    this.$ctor__com_google_j2cl_transpiler_readable_jsbridgebackward_A__();
+  }
+
+  /**
+   * Bridge method for exposing non-JsMethod.
+   * @override
+   * @param {number} arg0
+   * @return {number}
+   * @public
+   */
+  foo(arg0) {
+    return this.m_foo__int(arg0);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    InterfaceImpl.$clinit = (() => {});
+    InterfaceImpl.$loadModules();
+    A.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof InterfaceImpl;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, InterfaceImpl);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    InterfaceImpl,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.jsbridgebackward.InterfaceImpl'));
+
+
+MyJsInterface.$markImplementor(InterfaceImpl);
+
+
+exports = InterfaceImpl;
+//# sourceMappingURL=InterfaceImpl.js.map

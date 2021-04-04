@@ -1,0 +1,142 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder$ESWGOuter$ESWGInner.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.ESWGOuter.ESWGInner$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let ESWGOuter = goog.forwardDeclare('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.ESWGOuter$impl');
+
+
+/**
+ * @template T
+ */
+class ESWGInner extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {ESWGOuter<T>} */
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter_ESWGInner;
+    /** @public {number} */
+    this.f_value__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter_ESWGInner =
+        0;
+  }
+
+  /**
+   * Factory method corresponding to constructor 'ESWGInner(ESWGOuter)'.
+   * @template T
+   * @param {ESWGOuter<T>} $outer_this
+   * @return {!ESWGInner<T>}
+   * @public
+   */
+  static $create__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter(
+      $outer_this) {
+    ESWGInner.$clinit();
+    let $instance = new ESWGInner();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter_ESWGInner__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter(
+            $outer_this);
+    return $instance;
+  }
+
+  /**
+   * Initialization from constructor 'ESWGInner(ESWGOuter)'.
+   * @param {ESWGOuter<T>} $outer_this
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter_ESWGInner__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter(
+      $outer_this) {
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter_ESWGInner =
+        $outer_this;
+    this.$ctor__java_lang_Object__();
+    this.f_value__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter_ESWGInner =
+        1;
+  }
+
+  /**
+   * Factory method corresponding to constructor 'ESWGInner(ESWGOuter, int)'.
+   * @template T
+   * @param {ESWGOuter<T>} $outer_this
+   * @param {number} value
+   * @return {!ESWGInner<T>}
+   * @public
+   */
+  static $create__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter__int(
+      $outer_this, value) {
+    ESWGInner.$clinit();
+    let $instance = new ESWGInner();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter_ESWGInner__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter__int(
+            $outer_this, value);
+    return $instance;
+  }
+
+  /**
+   * Initialization from constructor 'ESWGInner(ESWGOuter, int)'.
+   * @param {ESWGOuter<T>} $outer_this
+   * @param {number} value
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter_ESWGInner__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter__int(
+      $outer_this, value) {
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter_ESWGInner =
+        $outer_this;
+    this.$ctor__java_lang_Object__();
+    this.f_value__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter_ESWGInner =
+        value;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    ESWGInner.$clinit = (() => {});
+    ESWGInner.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof ESWGInner;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, ESWGInner);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    ESWGInner,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder$ESWGOuter$ESWGInner'));
+
+
+
+exports = ESWGInner;
+//# sourceMappingURL=InnerClassInitOrder$ESWGOuter$ESWGInner.js.map

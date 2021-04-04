@@ -1,0 +1,105 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.bridgemethodcasts.Map.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.bridgemethodcasts.Map$impl');
+
+
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $LambdaAdaptor = goog.forwardDeclare('com.google.j2cl.transpiler.readable.bridgemethodcasts.Map.$LambdaAdaptor$impl');
+
+
+/**
+ * @interface
+ * @template K, V
+ */
+class Map {
+  /**
+   * @abstract
+   * @param {K} key
+   * @param {V} value
+   * @return {V}
+   * @public
+   */
+  m_put__java_lang_Object__java_lang_Object(key, value) {}
+
+  /**
+   * @template K, V
+   * @param {?function(K, V):V} fn
+   * @return {Map<K, V>}
+   * @public
+   */
+  static $adapt(fn) {
+    Map.$clinit();
+    return /**@type {!$LambdaAdaptor<K, V>} */ (new $LambdaAdaptor(fn));
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Map.$clinit = (() => {});
+    Map.$loadModules();
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @public
+   */
+  static $markImplementor(classConstructor) {
+    /**
+     * @public {boolean}
+     */
+    classConstructor.prototype
+        .$implements__com_google_j2cl_transpiler_readable_bridgemethodcasts_Map =
+        true;
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance != null &&
+        !!instance
+              .$implements__com_google_j2cl_transpiler_readable_bridgemethodcasts_Map;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return classConstructor != null &&
+        !!classConstructor.prototype
+              .$implements__com_google_j2cl_transpiler_readable_bridgemethodcasts_Map;
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $LambdaAdaptor = goog.module.get(
+        'com.google.j2cl.transpiler.readable.bridgemethodcasts.Map.$LambdaAdaptor$impl');
+  }
+};
+
+$Util.$setClassMetadataForInterface(
+    Map,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.bridgemethodcasts.Map'));
+
+
+Map.$markImplementor(/** @type {Function} */ (Map));
+
+
+exports = Map;
+//# sourceMappingURL=Map.js.map

@@ -1,0 +1,111 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.importglobaljstypes.Date.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.importglobaljstypes.Date$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $Overlay = goog.forwardDeclare('com.google.j2cl.transpiler.readable.importglobaljstypes.Date.NativeDate.$Overlay$impl');
+
+
+class c_g_j2cl_transpiler_readable_importglobaljstypes_Date extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!c_g_j2cl_transpiler_readable_importglobaljstypes_Date}
+   * @public
+   */
+  static $create__() {
+    c_g_j2cl_transpiler_readable_importglobaljstypes_Date.$clinit();
+    let $instance = new c_g_j2cl_transpiler_readable_importglobaljstypes_Date();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_importglobaljstypes_Date__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_importglobaljstypes_Date__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @param {number} x
+   * @return {number}
+   * @public
+   */
+  static m_now__double(x) {
+    c_g_j2cl_transpiler_readable_importglobaljstypes_Date.$clinit();
+    return Date.now();
+  }
+
+  /**
+   * @param {Date} d
+   * @return {Date}
+   * @public
+   */
+  m_copy__com_google_j2cl_transpiler_readable_importglobaljstypes_Date_NativeDate(
+      d) {
+    return d;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    c_g_j2cl_transpiler_readable_importglobaljstypes_Date.$clinit = (() => {});
+    c_g_j2cl_transpiler_readable_importglobaljstypes_Date.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof
+        c_g_j2cl_transpiler_readable_importglobaljstypes_Date;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(
+        classConstructor,
+        c_g_j2cl_transpiler_readable_importglobaljstypes_Date);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    c_g_j2cl_transpiler_readable_importglobaljstypes_Date,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.importglobaljstypes.Date'));
+
+
+
+exports = c_g_j2cl_transpiler_readable_importglobaljstypes_Date;
+//# sourceMappingURL=Date.js.map

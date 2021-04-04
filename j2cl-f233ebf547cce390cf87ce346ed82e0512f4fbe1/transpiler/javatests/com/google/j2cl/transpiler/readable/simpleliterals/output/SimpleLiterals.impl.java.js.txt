@@ -1,0 +1,103 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.simpleliterals.SimpleLiterals.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.simpleliterals.SimpleLiterals$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Class = goog.forwardDeclare('java.lang.Class$impl');
+
+
+class SimpleLiterals extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!SimpleLiterals}
+   * @public
+   */
+  static $create__() {
+    SimpleLiterals.$clinit();
+    let $instance = new SimpleLiterals();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_simpleliterals_SimpleLiterals__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_simpleliterals_SimpleLiterals__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_main__() {
+    let a = false;
+    let b = 97 /* 'a' */;
+    let c = null;
+    let d = 101;
+    let e = 'foo';
+    let f = Class.$get(SimpleLiterals);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    SimpleLiterals.$clinit = (() => {});
+    SimpleLiterals.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof SimpleLiterals;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, SimpleLiterals);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    Class = goog.module.get('java.lang.Class$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    SimpleLiterals,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.simpleliterals.SimpleLiterals'));
+
+
+
+exports = SimpleLiterals;
+//# sourceMappingURL=SimpleLiterals.js.map

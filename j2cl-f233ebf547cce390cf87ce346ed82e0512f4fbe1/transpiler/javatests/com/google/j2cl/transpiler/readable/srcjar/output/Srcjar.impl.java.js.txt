@@ -1,0 +1,98 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.srcjar.Srcjar.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.srcjar.Srcjar$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Foo = goog.forwardDeclare('com.google.j2cl.transpiler.readable.srcjar.Foo$impl');
+
+
+class Srcjar extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!Srcjar}
+   * @public
+   */
+  static $create__() {
+    Srcjar.$clinit();
+    let $instance = new Srcjar();
+    $instance.$ctor__com_google_j2cl_transpiler_readable_srcjar_Srcjar__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_srcjar_Srcjar__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static m_test__() {
+    Srcjar.$clinit();
+    let foo = Foo.$create__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Srcjar.$clinit = (() => {});
+    Srcjar.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof Srcjar;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, Srcjar);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    Foo =
+        goog.module.get('com.google.j2cl.transpiler.readable.srcjar.Foo$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    Srcjar,
+    $Util.$makeClassName('com.google.j2cl.transpiler.readable.srcjar.Srcjar'));
+
+
+
+exports = Srcjar;
+//# sourceMappingURL=Srcjar.js.map

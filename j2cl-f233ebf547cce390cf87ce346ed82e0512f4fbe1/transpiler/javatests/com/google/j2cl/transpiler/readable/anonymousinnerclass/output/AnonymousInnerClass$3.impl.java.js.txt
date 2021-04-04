@@ -1,0 +1,103 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.anonymousinnerclass.AnonymousInnerClass$3.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.anonymousinnerclass.AnonymousInnerClass.$3$impl');
+
+
+const $1C = goog.require('com.google.j2cl.transpiler.readable.anonymousinnerclass.AnonymousInnerClass.$1C$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let AnonymousInnerClass = goog.forwardDeclare('com.google.j2cl.transpiler.readable.anonymousinnerclass.AnonymousInnerClass$impl');
+
+
+class $3 extends $1C {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {AnonymousInnerClass} */
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_anonymousinnerclass_AnonymousInnerClass_3;
+    /** @public {number} */
+    this.$c_arg = 0;
+  }
+
+  /**
+   * @param {AnonymousInnerClass} $outer_this
+   * @param {number} $c_arg
+   * @return {!$3}
+   * @public
+   */
+  static $create__com_google_j2cl_transpiler_readable_anonymousinnerclass_AnonymousInnerClass__int(
+      $outer_this, $c_arg) {
+    $3.$clinit();
+    let $instance = new $3();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_anonymousinnerclass_AnonymousInnerClass_3__com_google_j2cl_transpiler_readable_anonymousinnerclass_AnonymousInnerClass__int(
+            $outer_this, $c_arg);
+    return $instance;
+  }
+
+  /**
+   * @param {AnonymousInnerClass} $outer_this
+   * @param {number} $c_arg
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_anonymousinnerclass_AnonymousInnerClass_3__com_google_j2cl_transpiler_readable_anonymousinnerclass_AnonymousInnerClass__int(
+      $outer_this, $c_arg) {
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_anonymousinnerclass_AnonymousInnerClass_3 =
+        $outer_this;
+    this.$c_arg = $c_arg;
+    this.$ctor__com_google_j2cl_transpiler_readable_anonymousinnerclass_AnonymousInnerClass_1C__com_google_j2cl_transpiler_readable_anonymousinnerclass_AnonymousInnerClass__int(
+        $outer_this, $c_arg);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    $3.$clinit = (() => {});
+    $3.$loadModules();
+    $1C.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof $3;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, $3);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    $3,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.anonymousinnerclass.AnonymousInnerClass$3'));
+
+
+
+exports = $3;
+//# sourceMappingURL=AnonymousInnerClass$3.js.map

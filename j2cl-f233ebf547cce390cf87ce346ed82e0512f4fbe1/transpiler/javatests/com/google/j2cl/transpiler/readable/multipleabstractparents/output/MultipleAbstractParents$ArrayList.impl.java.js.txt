@@ -1,0 +1,91 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents$ArrayList.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents.ArrayList$impl');
+
+
+const AbstractList = goog.require('com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents.AbstractList$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @template T
+ * @extends {AbstractList<T>}
+ */
+class ArrayList extends AbstractList {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @template T
+   * @return {!ArrayList<T>}
+   * @public
+   */
+  static $create__() {
+    ArrayList.$clinit();
+    let $instance = new ArrayList();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_multipleabstractparents_MultipleAbstractParents_ArrayList__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_multipleabstractparents_MultipleAbstractParents_ArrayList__() {
+    this.$ctor__com_google_j2cl_transpiler_readable_multipleabstractparents_MultipleAbstractParents_AbstractList__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    ArrayList.$clinit = (() => {});
+    ArrayList.$loadModules();
+    AbstractList.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof ArrayList;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, ArrayList);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    ArrayList,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents$ArrayList'));
+
+
+
+exports = ArrayList;
+//# sourceMappingURL=MultipleAbstractParents$ArrayList.js.map

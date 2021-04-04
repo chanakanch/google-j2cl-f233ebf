@@ -1,0 +1,109 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.collisions.bar.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.collisions.bar$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let foo = goog.forwardDeclare('com.google.j2cl.transpiler.readable.collisions.foo$impl');
+let c_g_j2cl_transpiler_readable_collisions_goog = goog.forwardDeclare('com.google.j2cl.transpiler.readable.collisions.goog$impl');
+
+
+class bar extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!bar}
+   * @public
+   */
+  static $create__() {
+    bar.$clinit();
+    let $instance = new bar();
+    $instance.$ctor__com_google_j2cl_transpiler_readable_collisions_bar__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_collisions_bar__() {
+    this.$ctor__java_lang_Object__();
+    this.$init__com_google_j2cl_transpiler_readable_collisions_bar();
+  }
+
+  /**
+   * @return {void}
+   * @private
+   */
+  $init__com_google_j2cl_transpiler_readable_collisions_bar() {
+    let /** number */ foo_1, /** number */ bar_1, /** number */ goog_1,
+        /** number */ flip, /** number */ window_1;
+    Math.random();
+    String.prototype.length;
+    new String();
+    c_g_j2cl_transpiler_readable_collisions_goog.$create__();
+    foo.$create__();
+    let delete_1 = 1;
+    let undefined_1 = 3;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    bar.$clinit = (() => {});
+    bar.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof bar;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, bar);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    foo = goog.module.get(
+        'com.google.j2cl.transpiler.readable.collisions.foo$impl');
+    c_g_j2cl_transpiler_readable_collisions_goog = goog.module.get(
+        'com.google.j2cl.transpiler.readable.collisions.goog$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    bar,
+    $Util.$makeClassName('com.google.j2cl.transpiler.readable.collisions.bar'));
+
+
+
+exports = bar;
+//# sourceMappingURL=bar.js.map

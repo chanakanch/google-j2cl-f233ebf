@@ -1,0 +1,133 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.lambdas.Lambdas$BiFunction.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.lambdas.Lambdas.BiFunction$impl');
+
+
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $LambdaAdaptor = goog.forwardDeclare('com.google.j2cl.transpiler.readable.lambdas.Lambdas.BiFunction.$LambdaAdaptor$impl');
+let Lambdas_Function = goog.forwardDeclare('com.google.j2cl.transpiler.readable.lambdas.Lambdas.Function$impl');
+
+
+/**
+ * @interface
+ * @template T, U, R
+ */
+class BiFunction {
+  /**
+   * @abstract
+   * @param {T} t
+   * @param {U} u
+   * @return {R}
+   * @public
+   */
+  m_apply__java_lang_Object__java_lang_Object(t, u) {}
+
+  /**
+   * @abstract
+   * @template V
+   * @param {Lambdas_Function<?, ?>} after
+   * @return {BiFunction<T, U, V>}
+   * @public
+   */
+  m_andThen__com_google_j2cl_transpiler_readable_lambdas_Lambdas_Function(
+      after) {}
+
+  /**
+   * @template T, U, R
+   * @param {?function(T, U):R} fn
+   * @return {BiFunction<T, U, R>}
+   * @public
+   */
+  static $adapt(fn) {
+    BiFunction.$clinit();
+    return /**@type {!$LambdaAdaptor<T, U, R>} */ (new $LambdaAdaptor(fn));
+  }
+
+  /**
+   * @template V, T, U, R
+   * @param {BiFunction<T, U, R>} $thisArg
+   * @param {Lambdas_Function<?, ?>} after
+   * @return {BiFunction<T, U, V>}
+   * @public
+   */
+  static m_andThen__$default__com_google_j2cl_transpiler_readable_lambdas_Lambdas_BiFunction__com_google_j2cl_transpiler_readable_lambdas_Lambdas_Function(
+      $thisArg, after) {
+    BiFunction.$clinit();
+    return /**@type {BiFunction<T, U, V>} */ (
+        BiFunction.$adapt(((/** T */ t, /** U */ u) => {
+          return after.m_apply__java_lang_Object(
+              $thisArg.m_apply__java_lang_Object__java_lang_Object(t, u));
+        })));
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    BiFunction.$clinit = (() => {});
+    BiFunction.$loadModules();
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @public
+   */
+  static $markImplementor(classConstructor) {
+    /**
+     * @public {boolean}
+     */
+    classConstructor.prototype
+        .$implements__com_google_j2cl_transpiler_readable_lambdas_Lambdas_BiFunction =
+        true;
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance != null &&
+        !!instance
+              .$implements__com_google_j2cl_transpiler_readable_lambdas_Lambdas_BiFunction;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return classConstructor != null &&
+        !!classConstructor.prototype
+              .$implements__com_google_j2cl_transpiler_readable_lambdas_Lambdas_BiFunction;
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $LambdaAdaptor = goog.module.get(
+        'com.google.j2cl.transpiler.readable.lambdas.Lambdas.BiFunction.$LambdaAdaptor$impl');
+  }
+};
+
+$Util.$setClassMetadataForInterface(
+    BiFunction,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.lambdas.Lambdas$BiFunction'));
+
+
+BiFunction.$markImplementor(/** @type {Function} */ (BiFunction));
+
+
+exports = BiFunction;
+//# sourceMappingURL=Lambdas$BiFunction.js.map

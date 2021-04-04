@@ -1,0 +1,142 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.instancejsmethods.Child.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.instancejsmethods.Child$impl');
+
+
+const MyInterface = goog.require('com.google.j2cl.transpiler.readable.instancejsmethods.MyInterface$impl');
+const Parent = goog.require('com.google.j2cl.transpiler.readable.instancejsmethods.Parent$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @implements {MyInterface}
+ */
+class Child extends Parent {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!Child}
+   * @public
+   */
+  static $create__() {
+    Child.$clinit();
+    let $instance = new Child();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_instancejsmethods_Child__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_instancejsmethods_Child__() {
+    this.$ctor__com_google_j2cl_transpiler_readable_instancejsmethods_Parent__();
+  }
+
+  /**
+   * @override
+   * @param {number} a
+   * @param {number} b
+   * @return {number}
+   * @public
+   */
+  sum(a, b) {
+    return a + b + 1;
+  }
+
+  /**
+   * @override
+   * @param {number} a
+   * @param {number} b
+   * @return {number}
+   * @public
+   */
+  bar(a, b) {
+    return a * b + 1;
+  }
+
+  /**
+   * @override
+   * @param {number} a
+   * @return {number}
+   * @public
+   */
+  myFoo(a) {
+    return a;
+  }
+
+  /**
+   * @return {number}
+   * @public
+   */
+  intfFoo() {
+    return 1;
+  }
+
+  /**
+   * Bridge method for exposing non-JsMethod.
+   * @override
+   * @return {number}
+   * @public
+   */
+  m_intfFoo__() {
+    return this.intfFoo();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Child.$clinit = (() => {});
+    Child.$loadModules();
+    Parent.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof Child;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, Child);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    Child,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.instancejsmethods.Child'));
+
+
+MyInterface.$markImplementor(Child);
+
+
+exports = Child;
+//# sourceMappingURL=Child.js.map

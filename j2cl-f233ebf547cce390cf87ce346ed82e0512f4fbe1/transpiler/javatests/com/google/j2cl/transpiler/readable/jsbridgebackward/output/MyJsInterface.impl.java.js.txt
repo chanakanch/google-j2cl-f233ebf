@@ -1,0 +1,102 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.jsbridgebackward.MyJsInterface.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.jsbridgebackward.MyJsInterface$impl');
+
+
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $LambdaAdaptor = goog.forwardDeclare('com.google.j2cl.transpiler.readable.jsbridgebackward.MyJsInterface.$LambdaAdaptor$impl');
+
+
+/**
+ * @interface
+ */
+class MyJsInterface {
+  /**
+   * @abstract
+   * @param {number} a
+   * @return {number}
+   * @public
+   */
+  foo(a) {}
+
+  /**
+   * @param {?function(number):number} fn
+   * @return {MyJsInterface}
+   * @public
+   */
+  static $adapt(fn) {
+    MyJsInterface.$clinit();
+    return new $LambdaAdaptor(fn);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    MyJsInterface.$clinit = (() => {});
+    MyJsInterface.$loadModules();
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @public
+   */
+  static $markImplementor(classConstructor) {
+    /**
+     * @public {boolean}
+     */
+    classConstructor.prototype
+        .$implements__com_google_j2cl_transpiler_readable_jsbridgebackward_MyJsInterface =
+        true;
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance != null &&
+        !!instance
+              .$implements__com_google_j2cl_transpiler_readable_jsbridgebackward_MyJsInterface;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return classConstructor != null &&
+        !!classConstructor.prototype
+              .$implements__com_google_j2cl_transpiler_readable_jsbridgebackward_MyJsInterface;
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $LambdaAdaptor = goog.module.get(
+        'com.google.j2cl.transpiler.readable.jsbridgebackward.MyJsInterface.$LambdaAdaptor$impl');
+  }
+};
+
+$Util.$setClassMetadataForInterface(
+    MyJsInterface,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.jsbridgebackward.MyJsInterface'));
+
+
+MyJsInterface.$markImplementor(/** @type {Function} */ (MyJsInterface));
+
+
+exports = MyJsInterface;
+//# sourceMappingURL=MyJsInterface.js.map

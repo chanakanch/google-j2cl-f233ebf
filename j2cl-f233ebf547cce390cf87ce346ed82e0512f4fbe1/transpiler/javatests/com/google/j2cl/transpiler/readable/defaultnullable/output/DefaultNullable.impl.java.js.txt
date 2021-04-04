@@ -1,0 +1,180 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.defaultnullable.DefaultNullable.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.defaultnullable.DefaultNullable$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let j_l_String = goog.forwardDeclare('java.lang.String$impl');
+let ArrayList = goog.forwardDeclare('java.util.ArrayList$impl');
+let List = goog.forwardDeclare('java.util.List$impl');
+let $Arrays = goog.forwardDeclare('vmbootstrap.Arrays$impl');
+
+
+class DefaultNullable extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {?string} */
+    this.f_f1__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_;
+    /** @public {?string} */
+    this.f_f2__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_;
+    /** @public {?string} */
+    this.f_f3__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_;
+    /** @public {List<?string>} */
+    this.f_f4__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_;
+    /** @public {List<?string>} */
+    this.f_f5__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_;
+    /** @public {List<?string>} */
+    this.f_f6__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_;
+    /** @public {List<?string>} */
+    this.f_f7__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_;
+    /** @public {Array<?string>} */
+    this.f_f8__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_;
+    /** @public {Array<?string>} */
+    this.f_f9__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_;
+    /** @public {Array<?string>} */
+    this.f_f10__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_;
+    /** @public {?void} */
+    this.f_f11__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_;
+    /** @public {!*} */
+    this.f_f12__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_;
+  }
+
+  /**
+   * @return {!DefaultNullable}
+   * @public
+   */
+  static $create__() {
+    DefaultNullable.$clinit();
+    let $instance = new DefaultNullable();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable__() {
+    this.$ctor__java_lang_Object__();
+    this.$init__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable();
+  }
+
+  /**
+   * @param {?string} a
+   * @param {List<?number>} b
+   * @return {?string}
+   * @public
+   */
+  m_m1__java_lang_String__java_util_List(a, b) {
+    return '';
+  }
+
+  /**
+   * @param {?string} a
+   * @param {List<?number>} b
+   * @return {?string}
+   * @public
+   */
+  m_m2__java_lang_String__java_util_List(a, b) {
+    return null;
+  }
+
+  /**
+   * @param {...?string} args
+   * @return {void}
+   * @public
+   */
+  m3(...args) {
+    $Arrays.$stampType(args, j_l_String, 1);
+  }
+
+  /**
+   * @return {void}
+   * @private
+   */
+  $init__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable() {
+    this.f_f1__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_ =
+        'Hello';
+    this.f_f2__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_ =
+        null;
+    this.f_f3__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_ =
+        null;
+    this.f_f4__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_ =
+        /**@type {!ArrayList<?string>} */ (ArrayList.$create__());
+    this.f_f5__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_ =
+        /**@type {!ArrayList<?string>} */ (ArrayList.$create__());
+    this.f_f6__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_ =
+        /**@type {!ArrayList<?string>} */ (ArrayList.$create__());
+    this.f_f7__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_ =
+        null;
+    this.f_f8__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_ =
+        /**@type {!Array<?string>} */ ($Arrays.$init([], j_l_String));
+    this.f_f9__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_ =
+        /**@type {!Array<?string>} */ ($Arrays.$init([], j_l_String));
+    this.f_f10__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_ =
+        /**@type {!Array<?string>} */ ($Arrays.$init([], j_l_String));
+    this.f_f11__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_ =
+        null;
+    this.f_f12__com_google_j2cl_transpiler_readable_defaultnullable_DefaultNullable_ =
+        j_l_Object.$create__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    DefaultNullable.$clinit = (() => {});
+    DefaultNullable.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof DefaultNullable;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, DefaultNullable);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    j_l_String = goog.module.get('java.lang.String$impl');
+    ArrayList = goog.module.get('java.util.ArrayList$impl');
+    $Arrays = goog.module.get('vmbootstrap.Arrays$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    DefaultNullable,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.defaultnullable.DefaultNullable'));
+
+
+
+exports = DefaultNullable;
+//# sourceMappingURL=DefaultNullable.js.map

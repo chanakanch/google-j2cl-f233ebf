@@ -1,0 +1,130 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.jsbridgeaccidentaloverride.MyJsType.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.jsbridgeaccidentaloverride.MyJsType$impl');
+
+
+const OtherInterface = goog.require('com.google.j2cl.transpiler.readable.jsbridgeaccidentaloverride.OtherInterface$impl');
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @implements {OtherInterface}
+ */
+class MyJsType extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!MyJsType}
+   * @public
+   */
+  static $create__() {
+    MyJsType.$clinit();
+    let $instance = new MyJsType();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_jsbridgeaccidentaloverride_MyJsType__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_jsbridgeaccidentaloverride_MyJsType__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @param {number} a
+   * @return {number}
+   * @public
+   */
+  foo(a) {
+    return a;
+  }
+
+  /**
+   * @param {number} a
+   * @return {number}
+   * @public
+   */
+  bar(a) {
+    return a + 1;
+  }
+
+  /**
+   * @param {number} a
+   * @return {number}
+   * @public
+   */
+  fun(a) {
+    return a - 1;
+  }
+
+  /**
+   * Bridge method for exposing non-JsMethod.
+   * @override
+   * @param {number} arg0
+   * @return {number}
+   * @public
+   */
+  m_fun__int(arg0) {
+    return this.fun(arg0);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    MyJsType.$clinit = (() => {});
+    MyJsType.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof MyJsType;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, MyJsType);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    MyJsType,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.jsbridgeaccidentaloverride.MyJsType'));
+
+
+OtherInterface.$markImplementor(MyJsType);
+
+
+exports = MyJsType;
+//# sourceMappingURL=MyJsType.js.map

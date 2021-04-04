@@ -1,0 +1,83 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.jsmethodoverride.Child.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.jsmethodoverride.Child$impl');
+
+
+const Parent = goog.require('com.google.j2cl.transpiler.readable.jsmethodoverride.Parent$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class Child extends Parent {
+  /**
+   * @public
+   */
+  constructor() {
+    Child.$clinit();
+    super();
+    this.$ctor__com_google_j2cl_transpiler_readable_jsmethodoverride_Child__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_jsmethodoverride_Child__() {
+    this.$ctor__com_google_j2cl_transpiler_readable_jsmethodoverride_Parent__();
+  }
+
+  /**
+   * @override
+   * @return {void}
+   * @public
+   */
+  bar() {}
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Child.$clinit = (() => {});
+    Child.$loadModules();
+    Parent.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof Child;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, Child);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    Child,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.jsmethodoverride.Child'));
+
+
+
+exports = Child;
+//# sourceMappingURL=Child.js.map

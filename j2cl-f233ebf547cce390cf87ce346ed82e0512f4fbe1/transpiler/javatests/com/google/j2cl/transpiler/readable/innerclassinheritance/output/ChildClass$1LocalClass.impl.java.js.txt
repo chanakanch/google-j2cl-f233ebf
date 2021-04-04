@@ -1,0 +1,128 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.innerclassinheritance.ChildClass$1LocalClass.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.innerclassinheritance.ChildClass.$1LocalClass$impl');
+
+
+const ChildClass = goog.require('com.google.j2cl.transpiler.readable.innerclassinheritance.ChildClass$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class $1LocalClass extends ChildClass {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {ChildClass} */
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass_1LocalClass;
+    /** @public {*} */
+    this.f_object__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass_1LocalClass;
+  }
+
+  /**
+   * @param {ChildClass} $outer_this
+   * @return {!$1LocalClass}
+   * @public
+   */
+  static $create__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass(
+      $outer_this) {
+    $1LocalClass.$clinit();
+    let $instance = new $1LocalClass();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass_1LocalClass__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass(
+            $outer_this);
+    return $instance;
+  }
+
+  /**
+   * @param {ChildClass} $outer_this
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass_1LocalClass__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass(
+      $outer_this) {
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass_1LocalClass =
+        $outer_this;
+    this.$ctor__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass__();
+    this.$init__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass_1LocalClass();
+  }
+
+  /**
+   * @override
+   * @return {void}
+   * @public
+   */
+  m_funInParentOuter__() {}
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_test__() {
+    this.m_funInOuter__();
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass_1LocalClass
+        .m_funInOuter__();
+    this.m_funInParentOuter__();
+    this.m_funInParentOuter__();
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass_1LocalClass
+        .m_funInParentOuter__();
+  }
+
+  /**
+   * @return {void}
+   * @private
+   */
+  $init__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass_1LocalClass() {
+    this.f_object__com_google_j2cl_transpiler_readable_innerclassinheritance_ChildClass_1LocalClass =
+        this;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    $1LocalClass.$clinit = (() => {});
+    $1LocalClass.$loadModules();
+    ChildClass.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof $1LocalClass;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, $1LocalClass);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    $1LocalClass,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.innerclassinheritance.ChildClass$1LocalClass'));
+
+
+
+exports = $1LocalClass;
+//# sourceMappingURL=ChildClass$1LocalClass.js.map

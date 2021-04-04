@@ -1,0 +1,286 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Cmp = goog.forwardDeclare('com.google.j2cl.transpiler.readable.intersectiontype.Cmp$impl');
+let Cmp2 = goog.forwardDeclare('com.google.j2cl.transpiler.readable.intersectiontype.Cmp2$impl');
+let Getable = goog.forwardDeclare('com.google.j2cl.transpiler.readable.intersectiontype.Getable$impl');
+let $LambdaAdaptor$1 = goog.forwardDeclare('com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.$LambdaAdaptor$1$impl');
+let $LambdaAdaptor$2 = goog.forwardDeclare('com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.$LambdaAdaptor$2$impl');
+let A = goog.forwardDeclare('com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.A$impl');
+let EmptyA = goog.forwardDeclare('com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.EmptyA$impl');
+let EmptyB = goog.forwardDeclare('com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.EmptyB$impl');
+let Setable = goog.forwardDeclare('com.google.j2cl.transpiler.readable.intersectiontype.Setable$impl');
+let Comparable = goog.forwardDeclare('java.lang.Comparable$impl');
+let $Equality = goog.forwardDeclare('nativebootstrap.Equality$impl');
+let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
+
+
+/**
+ * @template U
+ */
+class IntersectionTypeTest extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @template U
+   * @return {!IntersectionTypeTest<U>}
+   * @public
+   */
+  static $create__() {
+    IntersectionTypeTest.$clinit();
+    let $instance = new IntersectionTypeTest();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @template T
+   * @param {T} object
+   * @return {void}
+   * @public
+   */
+  static m_getAndSet__com_google_j2cl_transpiler_readable_intersectiontype_Getable(
+      object) {
+    IntersectionTypeTest.$clinit();
+    /**@type {Setable} */ ($Casts.$to(object, Setable)).m_set__int(1);
+    /**@type {Getable} */ (object).m_get__();
+  }
+
+  /**
+   * @template T
+   * @param {*} o
+   * @return {Getable<T>}
+   * @public
+   */
+  static m_cast__java_lang_Object(o) {
+    IntersectionTypeTest.$clinit();
+    if ($Equality.$same(o, null)) {
+      return /**@type {Getable<T>} */ (
+          $Casts.$to($Casts.$to(o, Getable), Setable));
+    }
+    return /**@type {Getable<T>} */ (
+        $Casts.$to($Casts.$to(o, Getable), Setable));
+  }
+
+  /**
+   * @template T
+   * @param {*} s
+   * @return {Getable<(Comparable<?string>|boolean|number|string)>}
+   * @public
+   */
+  static m_cast1__java_lang_Object(s) {
+    IntersectionTypeTest.$clinit();
+    return /**@type {Getable<(Comparable<?string>|boolean|number|string)>} */ (
+        $Casts.$to($Casts.$to(s, Getable), Setable));
+  }
+
+  /**
+   * @template T
+   * @param {*} s
+   * @return {Getable<(Comparable<T>|boolean|number|string)>}
+   * @public
+   */
+  static m_cast2__java_lang_Object(s) {
+    IntersectionTypeTest.$clinit();
+    return /**@type {Getable<(Comparable<T>|boolean|number|string)>} */ (
+        $Casts.$to($Casts.$to(s, Getable), Setable));
+  }
+
+  /**
+   * @param {*} s
+   * @return {*}
+   * @public
+   */
+  m_cast3__java_lang_Object(s) {
+    return s;
+  }
+
+  /**
+   * @return {Cmp}
+   * @public
+   */
+  static m_method__() {
+    IntersectionTypeTest.$clinit();
+    return /**@type {Cmp} */ (new $LambdaAdaptor$1((() => {
+      return 1;
+    })));
+  }
+
+  /**
+   * @return {Cmp2}
+   * @public
+   */
+  static m_method2__() {
+    IntersectionTypeTest.$clinit();
+    return /**@type {Cmp2} */ (new $LambdaAdaptor$2(((/** number */ a) => {
+      return 1;
+    })));
+  }
+
+  /**
+   * @param {*} o
+   * @return {void}
+   * @public
+   */
+  static m_testClosureAssignment__java_lang_Object(o) {
+    IntersectionTypeTest.$clinit();
+    let e = /**@type {A} */ (
+        $Casts.$to($Casts.$to($Casts.$to(o, A), EmptyA), EmptyB));
+    let g = /**@type {EmptyA} */ (
+        $Casts.$to($Casts.$to($Casts.$to(o, A), EmptyA), EmptyB));
+    let s = /**@type {EmptyB} */ (
+        $Casts.$to($Casts.$to($Casts.$to(o, A), EmptyA), EmptyB));
+  }
+
+  /**
+   * @template T
+   * @param {T} t
+   * @return {T}
+   * @public
+   */
+  static m_get__java_lang_Object_$p_com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest(
+      t) {
+    IntersectionTypeTest.$clinit();
+    return t;
+  }
+
+  /**
+   * @template T
+   * @return {T}
+   * @public
+   */
+  static m_m___$p_com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest() {
+    IntersectionTypeTest.$clinit();
+    return /**@type {T} */ ($Casts.$to(
+        IntersectionTypeTest
+            .m_get__java_lang_Object_$p_com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest(
+                j_l_Object.$create__()),
+        A));
+  }
+
+  /**
+   * @template T
+   * @return {Getable<T>}
+   * @public
+   */
+  static m_n___$p_com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest() {
+    IntersectionTypeTest.$clinit();
+    return null;
+  }
+
+  /**
+   * @template T
+   * @param {T} t
+   * @return {void}
+   * @public
+   */
+  static m_set__com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest_A_$p_com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest(
+      t) {
+    IntersectionTypeTest.$clinit();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_testMethodCall__() {
+    let o =
+        IntersectionTypeTest
+            .m_m___$p_com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest();
+    IntersectionTypeTest
+        .m_set__com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest_A_$p_com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest(
+            /**@type {A} */ ($Casts.$to($Casts.$to(o, A), EmptyA)));
+    IntersectionTypeTest
+        .m_set__com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest_A_$p_com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest(
+            IntersectionTypeTest
+                .m_m___$p_com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest());
+    let g = /**@type {Getable<A>} */ (
+        IntersectionTypeTest
+            .m_n___$p_com_google_j2cl_transpiler_readable_intersectiontype_IntersectionTypeTest());
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    IntersectionTypeTest.$clinit = (() => {});
+    IntersectionTypeTest.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof IntersectionTypeTest;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, IntersectionTypeTest);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    Getable = goog.module.get(
+        'com.google.j2cl.transpiler.readable.intersectiontype.Getable$impl');
+    $LambdaAdaptor$1 = goog.module.get(
+        'com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.$LambdaAdaptor$1$impl');
+    $LambdaAdaptor$2 = goog.module.get(
+        'com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.$LambdaAdaptor$2$impl');
+    A = goog.module.get(
+        'com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.A$impl');
+    EmptyA = goog.module.get(
+        'com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.EmptyA$impl');
+    EmptyB = goog.module.get(
+        'com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.EmptyB$impl');
+    Setable = goog.module.get(
+        'com.google.j2cl.transpiler.readable.intersectiontype.Setable$impl');
+    $Equality = goog.module.get('nativebootstrap.Equality$impl');
+    $Casts = goog.module.get('vmbootstrap.Casts$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    IntersectionTypeTest,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest'));
+
+
+
+exports = IntersectionTypeTest;
+//# sourceMappingURL=IntersectionTypeTest.js.map

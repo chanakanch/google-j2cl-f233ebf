@@ -1,0 +1,76 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.jstypeswithconstructor.JsTypesWithConstructor.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.jstypeswithconstructor.JsTypesWithConstructor$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class JsTypesWithConstructor extends j_l_Object {
+  /**
+   * @public
+   */
+  constructor() {
+    JsTypesWithConstructor.$clinit();
+    super();
+    this.$ctor__com_google_j2cl_transpiler_readable_jstypeswithconstructor_JsTypesWithConstructor__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_jstypeswithconstructor_JsTypesWithConstructor__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    JsTypesWithConstructor.$clinit = (() => {});
+    JsTypesWithConstructor.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof JsTypesWithConstructor;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, JsTypesWithConstructor);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    JsTypesWithConstructor,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.jstypeswithconstructor.JsTypesWithConstructor'));
+
+
+
+exports = JsTypesWithConstructor;
+//# sourceMappingURL=JsTypesWithConstructor.js.map

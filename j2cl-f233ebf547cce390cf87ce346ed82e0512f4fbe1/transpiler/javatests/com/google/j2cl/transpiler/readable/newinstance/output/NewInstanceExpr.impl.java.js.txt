@@ -1,0 +1,96 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.newinstance.NewInstanceExpr.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.newinstance.NewInstanceExpr$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class NewInstanceExpr extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!NewInstanceExpr}
+   * @public
+   */
+  static $create__() {
+    NewInstanceExpr.$clinit();
+    let $instance = new NewInstanceExpr();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_newinstance_NewInstanceExpr__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_newinstance_NewInstanceExpr__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @param {Array<?string>} args
+   * @return {void}
+   * @public
+   */
+  static m_main__arrayOf_java_lang_String(args) {
+    NewInstanceExpr.$clinit();
+    let a = NewInstanceExpr.$create__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    NewInstanceExpr.$clinit = (() => {});
+    NewInstanceExpr.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof NewInstanceExpr;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, NewInstanceExpr);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    NewInstanceExpr,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.newinstance.NewInstanceExpr'));
+
+
+
+exports = NewInstanceExpr;
+//# sourceMappingURL=NewInstanceExpr.js.map

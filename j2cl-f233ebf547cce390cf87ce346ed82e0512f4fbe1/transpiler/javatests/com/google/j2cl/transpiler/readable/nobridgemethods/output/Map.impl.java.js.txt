@@ -1,0 +1,88 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.nobridgemethods.Map.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.nobridgemethods.Map$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Entry = goog.forwardDeclare('com.google.j2cl.transpiler.readable.nobridgemethods.Entry$impl');
+
+
+/**
+ * @abstract
+ * @template K
+ */
+class Map extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_nobridgemethods_Map__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @abstract
+   * @param {K} key
+   * @return {Entry<K>}
+   * @public
+   */
+  m_getCeilingEntry__java_lang_Object(key) {}
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Map.$clinit = (() => {});
+    Map.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof Map;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, Map);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    Map,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.nobridgemethods.Map'));
+
+
+
+exports = Map;
+//# sourceMappingURL=Map.js.map

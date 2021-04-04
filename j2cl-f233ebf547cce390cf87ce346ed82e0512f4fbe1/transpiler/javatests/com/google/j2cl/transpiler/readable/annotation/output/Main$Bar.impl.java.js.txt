@@ -1,0 +1,112 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.annotation.Main$Bar.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.annotation.Main.Bar$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Main = goog.forwardDeclare('com.google.j2cl.transpiler.readable.annotation.Main$impl');
+let Foo = goog.forwardDeclare('com.google.j2cl.transpiler.readable.annotation.Main.Foo$impl');
+
+
+class Bar extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {Main} */
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_annotation_Main_Bar;
+  }
+
+  /**
+   * @param {Main} $outer_this
+   * @return {!Bar}
+   * @public
+   */
+  static $create__com_google_j2cl_transpiler_readable_annotation_Main(
+      $outer_this) {
+    Bar.$clinit();
+    let $instance = new Bar();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_annotation_Main_Bar__com_google_j2cl_transpiler_readable_annotation_Main(
+            $outer_this);
+    return $instance;
+  }
+
+  /**
+   * @param {Main} $outer_this
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_annotation_Main_Bar__com_google_j2cl_transpiler_readable_annotation_Main(
+      $outer_this) {
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_annotation_Main_Bar =
+        $outer_this;
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {number}
+   * @public
+   */
+  m_baz___$pp_com_google_j2cl_transpiler_readable_annotation() {
+    let foo = null;
+    foo.m_bar__();
+    return Foo
+        .f_CONSTANT__com_google_j2cl_transpiler_readable_annotation_Main_Foo;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Bar.$clinit = (() => {});
+    Bar.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof Bar;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, Bar);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    Foo = goog.module.get(
+        'com.google.j2cl.transpiler.readable.annotation.Main.Foo$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    Bar,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.annotation.Main$Bar'));
+
+
+
+exports = Bar;
+//# sourceMappingURL=Main$Bar.js.map

@@ -1,0 +1,99 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.labelstatement.LabeledStatement.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.labelstatement.LabeledStatement$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class LabeledStatement extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!LabeledStatement}
+   * @public
+   */
+  static $create__() {
+    LabeledStatement.$clinit();
+    let $instance = new LabeledStatement();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_labelstatement_LabeledStatement__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_labelstatement_LabeledStatement__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_test__() {
+    LABEL: for (;;) {
+      break LABEL;
+    }
+    LABEL1: for (;;) {
+      continue LABEL1;
+    }
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    LabeledStatement.$clinit = (() => {});
+    LabeledStatement.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof LabeledStatement;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, LabeledStatement);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    LabeledStatement,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.labelstatement.LabeledStatement'));
+
+
+
+exports = LabeledStatement;
+//# sourceMappingURL=LabeledStatement.js.map

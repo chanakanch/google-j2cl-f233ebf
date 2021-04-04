@@ -1,0 +1,101 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.intersectiontype.Cmp.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.intersectiontype.Cmp$impl');
+
+
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $LambdaAdaptor = goog.forwardDeclare('com.google.j2cl.transpiler.readable.intersectiontype.Cmp.$LambdaAdaptor$impl');
+
+
+/**
+ * @interface
+ */
+class Cmp {
+  /**
+   * @abstract
+   * @return {number}
+   * @public
+   */
+  m_cmp__() {}
+
+  /**
+   * @param {?function():number} fn
+   * @return {Cmp}
+   * @public
+   */
+  static $adapt(fn) {
+    Cmp.$clinit();
+    return new $LambdaAdaptor(fn);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Cmp.$clinit = (() => {});
+    Cmp.$loadModules();
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @public
+   */
+  static $markImplementor(classConstructor) {
+    /**
+     * @public {boolean}
+     */
+    classConstructor.prototype
+        .$implements__com_google_j2cl_transpiler_readable_intersectiontype_Cmp =
+        true;
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance != null &&
+        !!instance
+              .$implements__com_google_j2cl_transpiler_readable_intersectiontype_Cmp;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return classConstructor != null &&
+        !!classConstructor.prototype
+              .$implements__com_google_j2cl_transpiler_readable_intersectiontype_Cmp;
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $LambdaAdaptor = goog.module.get(
+        'com.google.j2cl.transpiler.readable.intersectiontype.Cmp.$LambdaAdaptor$impl');
+  }
+};
+
+$Util.$setClassMetadataForInterface(
+    Cmp,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.intersectiontype.Cmp'));
+
+
+Cmp.$markImplementor(/** @type {Function} */ (Cmp));
+
+
+exports = Cmp;
+//# sourceMappingURL=Cmp.js.map

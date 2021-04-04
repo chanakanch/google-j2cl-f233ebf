@@ -1,0 +1,86 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.qualifiedsupercall.QualifiedSuperCall.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.qualifiedsupercall.QualifiedSuperCall$impl');
+
+
+const Parent = goog.require('com.google.j2cl.transpiler.readable.qualifiedsupercall.Parent$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class QualifiedSuperCall extends Parent {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!QualifiedSuperCall}
+   * @public
+   */
+  static $create__() {
+    QualifiedSuperCall.$clinit();
+    let $instance = new QualifiedSuperCall();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_qualifiedsupercall_QualifiedSuperCall__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_qualifiedsupercall_QualifiedSuperCall__() {
+    this.$ctor__com_google_j2cl_transpiler_readable_qualifiedsupercall_Parent__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    QualifiedSuperCall.$clinit = (() => {});
+    QualifiedSuperCall.$loadModules();
+    Parent.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof QualifiedSuperCall;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, QualifiedSuperCall);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    QualifiedSuperCall,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.qualifiedsupercall.QualifiedSuperCall'));
+
+
+
+exports = QualifiedSuperCall;
+//# sourceMappingURL=QualifiedSuperCall.js.map

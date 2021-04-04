@@ -1,0 +1,97 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents$StringList.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents.StringList$impl');
+
+
+const AbstractStringList = goog.require('com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents.AbstractStringList$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class StringList extends AbstractStringList {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!StringList}
+   * @public
+   */
+  static $create__() {
+    StringList.$clinit();
+    let $instance = new StringList();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_multipleabstractparents_MultipleAbstractParents_StringList__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_multipleabstractparents_MultipleAbstractParents_StringList__() {
+    this.$ctor__com_google_j2cl_transpiler_readable_multipleabstractparents_MultipleAbstractParents_AbstractStringList__();
+  }
+
+  /**
+   * Bridge method.
+   * @override
+   * @param {?string} arg0
+   * @return {?string}
+   * @public
+   */
+  m_getFoo__java_lang_String(arg0) {
+    return super.m_getFoo__java_lang_Object(arg0);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    StringList.$clinit = (() => {});
+    StringList.$loadModules();
+    AbstractStringList.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof StringList;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, StringList);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    StringList,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents$StringList'));
+
+
+
+exports = StringList;
+//# sourceMappingURL=MultipleAbstractParents$StringList.js.map

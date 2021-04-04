@@ -1,0 +1,108 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.ifstatement.IfStatement.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.ifstatement.IfStatement$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class IfStatement extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!IfStatement}
+   * @public
+   */
+  static $create__() {
+    IfStatement.$clinit();
+    let $instance = new IfStatement();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_ifstatement_IfStatement__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_ifstatement_IfStatement__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_test__() {
+    let a = true;
+    let b = true;
+    let number_1 = 1;
+    if (a) {
+      number_1 = 2;
+    } else if (b) {
+      number_1 = 3;
+    } else {
+      number_1 = 4;
+    }
+    if (a) {
+      number_1 = 5;
+    } else {
+      number_1 = 6;
+    }
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    IfStatement.$clinit = (() => {});
+    IfStatement.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof IfStatement;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, IfStatement);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    IfStatement,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.ifstatement.IfStatement'));
+
+
+
+exports = IfStatement;
+//# sourceMappingURL=IfStatement.js.map

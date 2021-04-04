@@ -1,0 +1,18 @@
+/**
+ * @fileoverview transpiled from javaemul.InternalType.
+ *
+ * @suppress {extraRequire, lateProvide, unusedLocalVariables,
+ * strictModuleDepCheck}
+ */
+goog.module('javaemul.InternalType');
+
+
+// Imports headers for both eager and lazy dependencies to ensure that
+// all files are included in the dependency tree.
+const _j_l_Object = goog.require('java.lang.Object');
+const _$Util = goog.require('nativebootstrap.Util');
+
+
+// Re-exports the implementation.
+var InternalType = goog.require('javaemul.InternalType$impl');
+exports = InternalType;

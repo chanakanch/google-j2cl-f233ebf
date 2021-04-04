@@ -1,0 +1,107 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.mixednestings.MixedNestings.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.mixednestings.MixedNestings$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let A = goog.forwardDeclare('com.google.j2cl.transpiler.readable.mixednestings.MixedNestings.A$impl');
+
+
+class MixedNestings extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!MixedNestings}
+   * @public
+   */
+  static $create__() {
+    MixedNestings.$clinit();
+    let $instance = new MixedNestings();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_mixednestings_MixedNestings__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_mixednestings_MixedNestings__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_mm__() {}
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_test__() {
+    A.$create__com_google_j2cl_transpiler_readable_mixednestings_MixedNestings(
+         this)
+        .m_a__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    MixedNestings.$clinit = (() => {});
+    MixedNestings.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof MixedNestings;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, MixedNestings);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    A = goog.module.get(
+        'com.google.j2cl.transpiler.readable.mixednestings.MixedNestings.A$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    MixedNestings,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.mixednestings.MixedNestings'));
+
+
+
+exports = MixedNestings;
+//# sourceMappingURL=MixedNestings.js.map

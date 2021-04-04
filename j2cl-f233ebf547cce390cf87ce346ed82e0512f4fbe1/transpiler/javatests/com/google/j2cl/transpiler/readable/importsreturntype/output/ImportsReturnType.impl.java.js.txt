@@ -1,0 +1,97 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.importsreturntype.ImportsReturnType.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.importsreturntype.ImportsReturnType$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Entry = goog.forwardDeclare('com.google.j2cl.transpiler.readable.importsreturntype.ImportsReturnType.Entry$impl');
+let Set = goog.forwardDeclare('com.google.j2cl.transpiler.readable.importsreturntype.ImportsReturnType.Set$impl');
+
+
+class ImportsReturnType extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!ImportsReturnType}
+   * @public
+   */
+  static $create__() {
+    ImportsReturnType.$clinit();
+    let $instance = new ImportsReturnType();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_importsreturntype_ImportsReturnType__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_importsreturntype_ImportsReturnType__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {Set<Entry>}
+   * @public
+   */
+  m_get__() {
+    return null;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    ImportsReturnType.$clinit = (() => {});
+    ImportsReturnType.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof ImportsReturnType;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, ImportsReturnType);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    ImportsReturnType,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.importsreturntype.ImportsReturnType'));
+
+
+
+exports = ImportsReturnType;
+//# sourceMappingURL=ImportsReturnType.js.map

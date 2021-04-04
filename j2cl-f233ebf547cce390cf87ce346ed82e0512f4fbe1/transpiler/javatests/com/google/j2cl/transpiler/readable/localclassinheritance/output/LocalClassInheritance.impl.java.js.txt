@@ -1,0 +1,94 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.localclassinheritance.LocalClassInheritance.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.localclassinheritance.LocalClassInheritance$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class LocalClassInheritance extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!LocalClassInheritance}
+   * @public
+   */
+  static $create__() {
+    LocalClassInheritance.$clinit();
+    let $instance = new LocalClassInheritance();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_localclassinheritance_LocalClassInheritance__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_localclassinheritance_LocalClassInheritance__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_test__() {
+    let f = 1;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    LocalClassInheritance.$clinit = (() => {});
+    LocalClassInheritance.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof LocalClassInheritance;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, LocalClassInheritance);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    LocalClassInheritance,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.localclassinheritance.LocalClassInheritance'));
+
+
+
+exports = LocalClassInheritance;
+//# sourceMappingURL=LocalClassInheritance.js.map

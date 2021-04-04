@@ -1,0 +1,95 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.supercallnondefault.Parent.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.supercallnondefault.Parent$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class Parent extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {number} */
+    this.f_field__com_google_j2cl_transpiler_readable_supercallnondefault_Parent =
+        0;
+  }
+
+  /**
+   * @param {number} f
+   * @return {!Parent}
+   * @public
+   */
+  static $create__int(f) {
+    Parent.$clinit();
+    let $instance = new Parent();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_supercallnondefault_Parent__int(
+            f);
+    return $instance;
+  }
+
+  /**
+   * @param {number} f
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_supercallnondefault_Parent__int(
+      f) {
+    this.$ctor__java_lang_Object__();
+    this.f_field__com_google_j2cl_transpiler_readable_supercallnondefault_Parent =
+        f;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Parent.$clinit = (() => {});
+    Parent.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof Parent;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, Parent);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    Parent,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.supercallnondefault.Parent'));
+
+
+
+exports = Parent;
+//# sourceMappingURL=Parent.js.map

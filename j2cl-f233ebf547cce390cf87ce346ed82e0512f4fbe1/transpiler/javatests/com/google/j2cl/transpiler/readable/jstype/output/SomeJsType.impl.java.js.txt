@@ -1,0 +1,153 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.jstype.SomeJsType.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.jstype.SomeJsType$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $Overlay = goog.forwardDeclare('com.google.j2cl.transpiler.readable.jstype.SomeJsType.Star.$Overlay$impl');
+let Wildcard_$Overlay = goog.forwardDeclare('com.google.j2cl.transpiler.readable.jstype.SomeJsType.Wildcard.$Overlay$impl');
+let $Casts = goog.forwardDeclare('vmbootstrap.Casts$impl');
+
+
+/**
+ * @template T
+ */
+class SomeJsType extends j_l_Object {
+  /**
+   * @public
+   */
+  constructor() {
+    SomeJsType.$clinit();
+    super();
+    /** @public {number} */
+    this.publicField = 0;
+    /** @public {number} */
+    this.f_privateField__com_google_j2cl_transpiler_readable_jstype_SomeJsType_ =
+        0;
+    /** @public {number} */
+    this.f_packageField__com_google_j2cl_transpiler_readable_jstype_SomeJsType =
+        0;
+    /** @public {number} */
+    this.f_protectedField__com_google_j2cl_transpiler_readable_jstype_SomeJsType =
+        0;
+    this.$ctor__com_google_j2cl_transpiler_readable_jstype_SomeJsType__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_jstype_SomeJsType__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  publicMethod() {}
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_privateMethod___$p_com_google_j2cl_transpiler_readable_jstype_SomeJsType() {
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_packageMethod___$pp_com_google_j2cl_transpiler_readable_jstype() {}
+
+  /**
+   * @return {void}
+   * @public
+   */
+  m_protectedMethod__() {}
+
+  /**
+   * @return {void}
+   * @public
+   */
+  useFieldsAndMethods() {
+    let value = this.publicField +
+        this.f_privateField__com_google_j2cl_transpiler_readable_jstype_SomeJsType_ +
+        this.f_packageField__com_google_j2cl_transpiler_readable_jstype_SomeJsType +
+        this.f_protectedField__com_google_j2cl_transpiler_readable_jstype_SomeJsType;
+    this.publicMethod();
+    this.m_privateMethod___$p_com_google_j2cl_transpiler_readable_jstype_SomeJsType();
+    this.m_packageMethod___$pp_com_google_j2cl_transpiler_readable_jstype();
+    this.m_protectedMethod__();
+  }
+
+  /**
+   * @param {*} s
+   * @param {?} w
+   * @return {?}
+   * @public
+   */
+  testStarAndWildCard(s, w) {
+    let object = j_l_Object.$create__();
+    let star =
+        /**@type {*} */ ($Casts.$to($Casts.$to(3.0, j_l_Object), $Overlay));
+    return /**@type {?} */ ($Casts.$to(star, Wildcard_$Overlay));
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    SomeJsType.$clinit = (() => {});
+    SomeJsType.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof SomeJsType;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, SomeJsType);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $Overlay = goog.module.get(
+        'com.google.j2cl.transpiler.readable.jstype.SomeJsType.Star.$Overlay$impl');
+    Wildcard_$Overlay = goog.module.get(
+        'com.google.j2cl.transpiler.readable.jstype.SomeJsType.Wildcard.$Overlay$impl');
+    $Casts = goog.module.get('vmbootstrap.Casts$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    SomeJsType,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.jstype.SomeJsType'));
+
+
+
+exports = SomeJsType;
+//# sourceMappingURL=SomeJsType.js.map

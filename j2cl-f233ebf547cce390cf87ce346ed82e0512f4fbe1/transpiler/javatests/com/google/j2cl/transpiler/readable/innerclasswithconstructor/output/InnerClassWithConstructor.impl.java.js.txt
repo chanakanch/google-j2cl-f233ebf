@@ -1,0 +1,89 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.innerclasswithconstructor.InnerClassWithConstructor.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.innerclasswithconstructor.InnerClassWithConstructor$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class InnerClassWithConstructor extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {number} */
+    this.f_a__com_google_j2cl_transpiler_readable_innerclasswithconstructor_InnerClassWithConstructor =
+        0;
+  }
+
+  /**
+   * @return {!InnerClassWithConstructor}
+   * @public
+   */
+  static $create__() {
+    InnerClassWithConstructor.$clinit();
+    let $instance = new InnerClassWithConstructor();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_innerclasswithconstructor_InnerClassWithConstructor__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_innerclasswithconstructor_InnerClassWithConstructor__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    InnerClassWithConstructor.$clinit = (() => {});
+    InnerClassWithConstructor.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof InnerClassWithConstructor;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, InnerClassWithConstructor);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    InnerClassWithConstructor,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.innerclasswithconstructor.InnerClassWithConstructor'));
+
+
+
+exports = InnerClassWithConstructor;
+//# sourceMappingURL=InnerClassWithConstructor.js.map

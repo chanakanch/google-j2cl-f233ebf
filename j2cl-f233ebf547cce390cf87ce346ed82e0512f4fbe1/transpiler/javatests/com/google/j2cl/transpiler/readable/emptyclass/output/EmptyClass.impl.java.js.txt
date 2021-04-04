@@ -1,0 +1,86 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.emptyclass.EmptyClass.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.emptyclass.EmptyClass$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class EmptyClass extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!EmptyClass}
+   * @public
+   */
+  static $create__() {
+    EmptyClass.$clinit();
+    let $instance = new EmptyClass();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_emptyclass_EmptyClass__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_emptyclass_EmptyClass__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    EmptyClass.$clinit = (() => {});
+    EmptyClass.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof EmptyClass;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, EmptyClass);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    EmptyClass,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.emptyclass.EmptyClass'));
+
+
+
+exports = EmptyClass;
+//# sourceMappingURL=EmptyClass.js.map

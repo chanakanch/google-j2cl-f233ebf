@@ -1,0 +1,130 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder$ESWGInnerSubclass.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.ESWGInnerSubclass$impl');
+
+
+const ESWGInner = goog.require('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.ESWGOuter.ESWGInner$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let ESWGOuter = goog.forwardDeclare('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.ESWGOuter$impl');
+
+
+/**
+ * @extends {ESWGInner<?string>}
+ */
+class ESWGInnerSubclass extends ESWGInner {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * Factory method corresponding to constructor 'ESWGInnerSubclass(ESWGOuter)'.
+   * @param {ESWGOuter<?string>} outer
+   * @return {!ESWGInnerSubclass}
+   * @public
+   */
+  static $create__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter(
+      outer) {
+    ESWGInnerSubclass.$clinit();
+    let $instance = new ESWGInnerSubclass();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGInnerSubclass__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter(
+            outer);
+    return $instance;
+  }
+
+  /**
+   * Initialization from constructor 'ESWGInnerSubclass(ESWGOuter)'.
+   * @param {ESWGOuter<?string>} outer
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGInnerSubclass__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter(
+      outer) {
+    this.$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter_ESWGInner__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter(
+        outer);
+  }
+
+  /**
+   * Factory method corresponding to constructor 'ESWGInnerSubclass(int,
+   * ESWGOuter)'.
+   * @param {number} value
+   * @param {ESWGOuter<?string>} outer
+   * @return {!ESWGInnerSubclass}
+   * @public
+   */
+  static $create__int__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter(
+      value, outer) {
+    ESWGInnerSubclass.$clinit();
+    let $instance = new ESWGInnerSubclass();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGInnerSubclass__int__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter(
+            value, outer);
+    return $instance;
+  }
+
+  /**
+   * Initialization from constructor 'ESWGInnerSubclass(int, ESWGOuter)'.
+   * @param {number} value
+   * @param {ESWGOuter<?string>} outer
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGInnerSubclass__int__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter(
+      value, outer) {
+    this.$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter_ESWGInner__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_ESWGOuter__int(
+        outer, value);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    ESWGInnerSubclass.$clinit = (() => {});
+    ESWGInnerSubclass.$loadModules();
+    ESWGInner.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof ESWGInnerSubclass;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, ESWGInnerSubclass);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    ESWGInnerSubclass,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder$ESWGInnerSubclass'));
+
+
+
+exports = ESWGInnerSubclass;
+//# sourceMappingURL=InnerClassInitOrder$ESWGInnerSubclass.js.map

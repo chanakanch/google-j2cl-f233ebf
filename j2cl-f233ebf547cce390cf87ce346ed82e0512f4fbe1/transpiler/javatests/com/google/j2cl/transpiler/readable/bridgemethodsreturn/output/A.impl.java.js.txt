@@ -1,0 +1,107 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.bridgemethodsreturn.A.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.bridgemethodsreturn.A$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @template T, S
+ */
+class A extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @template T, S
+   * @return {!A<T, S>}
+   * @public
+   */
+  static $create__() {
+    A.$clinit();
+    let $instance = new A();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_bridgemethodsreturn_A__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_bridgemethodsreturn_A__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @param {S} s
+   * @return {T}
+   * @public
+   */
+  m_fun__java_lang_Object(s) {
+    return null;
+  }
+
+  /**
+   * @return {T}
+   * @public
+   */
+  m_get__() {
+    return null;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    A.$clinit = (() => {});
+    A.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof A;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, A);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    A,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.bridgemethodsreturn.A'));
+
+
+
+exports = A;
+//# sourceMappingURL=A.js.map

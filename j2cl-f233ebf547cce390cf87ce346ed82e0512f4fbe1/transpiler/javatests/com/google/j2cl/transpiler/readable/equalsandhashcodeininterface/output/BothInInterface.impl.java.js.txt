@@ -1,0 +1,94 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.equalsandhashcodeininterface.BothInInterface.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.equalsandhashcodeininterface.BothInInterface$impl');
+
+
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @interface
+ */
+class BothInInterface {
+  /**
+   * @abstract
+   * @param {*} obj
+   * @return {boolean}
+   * @public
+   */
+  equals(obj) {}
+
+  /**
+   * @abstract
+   * @return {number}
+   * @public
+   */
+  hashCode() {}
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    BothInInterface.$clinit = (() => {});
+    BothInInterface.$loadModules();
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @public
+   */
+  static $markImplementor(classConstructor) {
+    /**
+     * @public {boolean}
+     */
+    classConstructor.prototype
+        .$implements__com_google_j2cl_transpiler_readable_equalsandhashcodeininterface_BothInInterface =
+        true;
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance != null &&
+        !!instance
+              .$implements__com_google_j2cl_transpiler_readable_equalsandhashcodeininterface_BothInInterface;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return classConstructor != null &&
+        !!classConstructor.prototype
+              .$implements__com_google_j2cl_transpiler_readable_equalsandhashcodeininterface_BothInInterface;
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadataForInterface(
+    BothInInterface,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.equalsandhashcodeininterface.BothInInterface'));
+
+
+BothInInterface.$markImplementor(/** @type {Function} */ (BothInInterface));
+
+
+exports = BothInInterface;
+//# sourceMappingURL=BothInInterface.js.map

@@ -1,0 +1,104 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents$Collection.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents.Collection$impl');
+
+
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $LambdaAdaptor = goog.forwardDeclare('com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents.Collection.$LambdaAdaptor$impl');
+
+
+/**
+ * @interface
+ * @template T
+ */
+class Collection {
+  /**
+   * @abstract
+   * @param {T} t
+   * @return {?string}
+   * @public
+   */
+  m_getFoo__java_lang_Object(t) {}
+
+  /**
+   * @template T
+   * @param {?function(T):?string} fn
+   * @return {Collection<T>}
+   * @public
+   */
+  static $adapt(fn) {
+    Collection.$clinit();
+    return /**@type {!$LambdaAdaptor<T>} */ (new $LambdaAdaptor(fn));
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Collection.$clinit = (() => {});
+    Collection.$loadModules();
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @public
+   */
+  static $markImplementor(classConstructor) {
+    /**
+     * @public {boolean}
+     */
+    classConstructor.prototype
+        .$implements__com_google_j2cl_transpiler_readable_multipleabstractparents_MultipleAbstractParents_Collection =
+        true;
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance != null &&
+        !!instance
+              .$implements__com_google_j2cl_transpiler_readable_multipleabstractparents_MultipleAbstractParents_Collection;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return classConstructor != null &&
+        !!classConstructor.prototype
+              .$implements__com_google_j2cl_transpiler_readable_multipleabstractparents_MultipleAbstractParents_Collection;
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $LambdaAdaptor = goog.module.get(
+        'com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents.Collection.$LambdaAdaptor$impl');
+  }
+};
+
+$Util.$setClassMetadataForInterface(
+    Collection,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.multipleabstractparents.MultipleAbstractParents$Collection'));
+
+
+Collection.$markImplementor(/** @type {Function} */ (Collection));
+
+
+exports = Collection;
+//# sourceMappingURL=MultipleAbstractParents$Collection.js.map

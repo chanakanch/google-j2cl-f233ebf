@@ -1,0 +1,140 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder$OuterRefFromThisCtorCall.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.OuterRefFromThisCtorCall$impl');
+
+
+const OuterRefFromSuperCtorBase = goog.require('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.OuterRefFromSuperCtorBase$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let InnerClassInitOrder = goog.forwardDeclare('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder$impl');
+let $1 = goog.forwardDeclare('com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.OuterRefFromThisCtorCall.$1$impl');
+
+
+class OuterRefFromThisCtorCall extends OuterRefFromSuperCtorBase {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {InnerClassInitOrder} */
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_OuterRefFromThisCtorCall;
+  }
+
+  /**
+   * Factory method corresponding to constructor
+   * 'OuterRefFromThisCtorCall(InnerClassInitOrder, Object)'.
+   * @param {InnerClassInitOrder} $outer_this
+   * @param {*} object
+   * @return {!OuterRefFromThisCtorCall}
+   * @public
+   */
+  static $create__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder__java_lang_Object(
+      $outer_this, object) {
+    OuterRefFromThisCtorCall.$clinit();
+    let $instance = new OuterRefFromThisCtorCall();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_OuterRefFromThisCtorCall__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder__java_lang_Object(
+            $outer_this, object);
+    return $instance;
+  }
+
+  /**
+   * Initialization from constructor
+   * 'OuterRefFromThisCtorCall(InnerClassInitOrder, Object)'.
+   * @param {InnerClassInitOrder} $outer_this
+   * @param {*} object
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_OuterRefFromThisCtorCall__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder__java_lang_Object(
+      $outer_this, object) {
+    this.f_$outer_this__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_OuterRefFromThisCtorCall =
+        $outer_this;
+    this.$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_OuterRefFromSuperCtorBase__java_lang_Object(
+        object);
+  }
+
+  /**
+   * Factory method corresponding to constructor
+   * 'OuterRefFromThisCtorCall(InnerClassInitOrder)'.
+   * @param {InnerClassInitOrder} $outer_this
+   * @return {!OuterRefFromThisCtorCall}
+   * @public
+   */
+  static $create__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder(
+      $outer_this) {
+    OuterRefFromThisCtorCall.$clinit();
+    let $instance = new OuterRefFromThisCtorCall();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_OuterRefFromThisCtorCall__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder(
+            $outer_this);
+    return $instance;
+  }
+
+  /**
+   * Initialization from constructor
+   * 'OuterRefFromThisCtorCall(InnerClassInitOrder)'.
+   * @param {InnerClassInitOrder} $outer_this
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_OuterRefFromThisCtorCall__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder(
+      $outer_this) {
+    this.$ctor__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_OuterRefFromThisCtorCall__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder__java_lang_Object(
+        $outer_this,
+        $1.$create__com_google_j2cl_transpiler_readable_innerclassinitorder_InnerClassInitOrder_OuterRefFromThisCtorCall(
+            this));
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    OuterRefFromThisCtorCall.$clinit = (() => {});
+    OuterRefFromThisCtorCall.$loadModules();
+    OuterRefFromSuperCtorBase.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof OuterRefFromThisCtorCall;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, OuterRefFromThisCtorCall);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $1 = goog.module.get(
+        'com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder.OuterRefFromThisCtorCall.$1$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    OuterRefFromThisCtorCall,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.innerclassinitorder.InnerClassInitOrder$OuterRefFromThisCtorCall'));
+
+
+
+exports = OuterRefFromThisCtorCall;
+//# sourceMappingURL=InnerClassInitOrder$OuterRefFromThisCtorCall.js.map

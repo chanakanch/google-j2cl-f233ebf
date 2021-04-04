@@ -1,0 +1,69 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.nativetype.MyTypedArray$$Overlay.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.nativetype.MyTypedArray.$Overlay$impl');
+
+
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class $Overlay {
+  /**
+   * @template T
+   * @param {Array<T>} $thisArg
+   * @return {number}
+   * @public
+   */
+  static m_size__com_google_j2cl_transpiler_readable_nativetype_MyTypedArray(
+      $thisArg) {
+    $Overlay.$clinit();
+    return $thisArg.length;
+  }
+
+  /**
+   * @template T
+   * @param {Array<T>} $thisArg
+   * @param {number} index
+   * @return {T}
+   * @public
+   */
+  static m_get__com_google_j2cl_transpiler_readable_nativetype_MyTypedArray__int(
+      $thisArg, index) {
+    $Overlay.$clinit();
+    return null;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    $Overlay.$clinit = (() => {});
+    $Overlay.$loadModules();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof Array;
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata($Overlay, $Util.$makeClassName('Array'));
+
+
+exports = $Overlay;
+//# sourceMappingURL=MyTypedArray$$Overlay.js.map

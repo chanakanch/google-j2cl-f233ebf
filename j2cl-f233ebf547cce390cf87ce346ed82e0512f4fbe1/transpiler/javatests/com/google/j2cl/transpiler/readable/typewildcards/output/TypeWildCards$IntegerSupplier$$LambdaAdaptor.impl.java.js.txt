@@ -1,0 +1,104 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.typewildcards.TypeWildCards$IntegerSupplier$$LambdaAdaptor.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.typewildcards.TypeWildCards.IntegerSupplier.$LambdaAdaptor$impl');
+
+
+const IntegerSupplier = goog.require('com.google.j2cl.transpiler.readable.typewildcards.TypeWildCards.IntegerSupplier$impl');
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Integer = goog.forwardDeclare('java.lang.Integer$impl');
+
+
+/**
+ * @implements {IntegerSupplier}
+ */
+class $LambdaAdaptor extends j_l_Object {
+  /**
+   * @param {?function():Integer} fn
+   * @public
+   */
+  constructor(fn) {
+    $LambdaAdaptor.$clinit();
+    super();
+    /** @public {?function():Integer} */
+    this.f_$$fn__com_google_j2cl_transpiler_readable_typewildcards_TypeWildCards_IntegerSupplier_$LambdaAdaptor;
+    this.$ctor__com_google_j2cl_transpiler_readable_typewildcards_TypeWildCards_IntegerSupplier_$LambdaAdaptor__com_google_j2cl_transpiler_readable_typewildcards_TypeWildCards_IntegerSupplier_$JsFunction(
+        fn);
+  }
+
+  /**
+   * @param {?function():Integer} fn
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_typewildcards_TypeWildCards_IntegerSupplier_$LambdaAdaptor__com_google_j2cl_transpiler_readable_typewildcards_TypeWildCards_IntegerSupplier_$JsFunction(
+      fn) {
+    this.$ctor__java_lang_Object__();
+    this.f_$$fn__com_google_j2cl_transpiler_readable_typewildcards_TypeWildCards_IntegerSupplier_$LambdaAdaptor =
+        fn;
+  }
+
+  /**
+   * @return {Integer}
+   * @public
+   */
+  m_get__() {
+    let /** ?function():Integer */ $function;
+    return (
+        $function =
+            this.f_$$fn__com_google_j2cl_transpiler_readable_typewildcards_TypeWildCards_IntegerSupplier_$LambdaAdaptor,
+        $function());
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    $LambdaAdaptor.$clinit = (() => {});
+    $LambdaAdaptor.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof $LambdaAdaptor;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, $LambdaAdaptor);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    $LambdaAdaptor,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.typewildcards.TypeWildCards$IntegerSupplier$$LambdaAdaptor'));
+
+
+IntegerSupplier.$markImplementor($LambdaAdaptor);
+
+
+exports = $LambdaAdaptor;
+//# sourceMappingURL=TypeWildCards$IntegerSupplier$$LambdaAdaptor.js.map

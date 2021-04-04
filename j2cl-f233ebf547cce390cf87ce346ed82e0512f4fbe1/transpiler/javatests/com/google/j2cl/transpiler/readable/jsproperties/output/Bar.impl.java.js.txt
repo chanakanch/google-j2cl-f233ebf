@@ -1,0 +1,121 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.jsproperties.Bar.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.jsproperties.Bar$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class Bar extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+    /** @public {number} */
+    this.f_f__com_google_j2cl_transpiler_readable_jsproperties_Bar_ = 0;
+  }
+
+  /**
+   * @return {!Bar}
+   * @public
+   */
+  static $create__() {
+    Bar.$clinit();
+    let $instance = new Bar();
+    $instance.$ctor__com_google_j2cl_transpiler_readable_jsproperties_Bar__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_jsproperties_Bar__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {number}
+   * @public
+   */
+  get a() {
+    return this.f_f__com_google_j2cl_transpiler_readable_jsproperties_Bar_ + 1;
+  }
+
+  /**
+   * @param {number} x
+   * @return {void}
+   * @public
+   */
+  set a(x) {
+    this.f_f__com_google_j2cl_transpiler_readable_jsproperties_Bar_ = x + 2;
+  }
+
+  /**
+   * @return {number}
+   * @public
+   */
+  get abc() {
+    return this.f_f__com_google_j2cl_transpiler_readable_jsproperties_Bar_ + 3;
+  }
+
+  /**
+   * @param {number} x
+   * @return {void}
+   * @public
+   */
+  set abc(x) {
+    this.f_f__com_google_j2cl_transpiler_readable_jsproperties_Bar_ = x + 4;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Bar.$clinit = (() => {});
+    Bar.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof Bar;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, Bar);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    Bar,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.jsproperties.Bar'));
+
+
+
+exports = Bar;
+//# sourceMappingURL=Bar.js.map

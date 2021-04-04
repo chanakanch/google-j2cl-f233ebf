@@ -1,0 +1,117 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.lambdas.Lambdas$Function.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.lambdas.Lambdas.Function$impl');
+
+
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $LambdaAdaptor = goog.forwardDeclare('com.google.j2cl.transpiler.readable.lambdas.Lambdas.Function.$LambdaAdaptor$impl');
+
+
+/**
+ * @interface
+ * @template T, R
+ */
+class Lambdas_Function {
+  /**
+   * @template T_1
+   * @return {Lambdas_Function<T_1, T_1>}
+   * @public
+   */
+  static m_identity__() {
+    Lambdas_Function.$clinit();
+    return /**@type {Lambdas_Function<T_1, T_1>} */ (
+        Lambdas_Function.$adapt(((/** T_1 */ t) => {
+          return t;
+        })));
+  }
+
+  /**
+   * @abstract
+   * @param {T} t
+   * @return {R}
+   * @public
+   */
+  m_apply__java_lang_Object(t) {}
+
+  /**
+   * @template T, R
+   * @param {?function(T):R} fn
+   * @return {Lambdas_Function<T, R>}
+   * @public
+   */
+  static $adapt(fn) {
+    Lambdas_Function.$clinit();
+    return /**@type {!$LambdaAdaptor<T, R>} */ (new $LambdaAdaptor(fn));
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    Lambdas_Function.$clinit = (() => {});
+    Lambdas_Function.$loadModules();
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @public
+   */
+  static $markImplementor(classConstructor) {
+    /**
+     * @public {boolean}
+     */
+    classConstructor.prototype
+        .$implements__com_google_j2cl_transpiler_readable_lambdas_Lambdas_Function =
+        true;
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance != null &&
+        !!instance
+              .$implements__com_google_j2cl_transpiler_readable_lambdas_Lambdas_Function;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return classConstructor != null &&
+        !!classConstructor.prototype
+              .$implements__com_google_j2cl_transpiler_readable_lambdas_Lambdas_Function;
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $LambdaAdaptor = goog.module.get(
+        'com.google.j2cl.transpiler.readable.lambdas.Lambdas.Function.$LambdaAdaptor$impl');
+  }
+};
+
+$Util.$setClassMetadataForInterface(
+    Lambdas_Function,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.lambdas.Lambdas$Function'));
+
+
+Lambdas_Function.$markImplementor(/** @type {Function} */ (Lambdas_Function));
+
+
+exports = Lambdas_Function;
+//# sourceMappingURL=Lambdas$Function.js.map

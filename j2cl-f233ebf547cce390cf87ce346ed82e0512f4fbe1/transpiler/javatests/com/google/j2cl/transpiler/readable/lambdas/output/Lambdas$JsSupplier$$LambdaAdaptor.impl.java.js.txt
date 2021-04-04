@@ -1,0 +1,120 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.lambdas.Lambdas$JsSupplier$$LambdaAdaptor.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.lambdas.Lambdas.JsSupplier.$LambdaAdaptor$impl');
+
+
+const JsSupplier = goog.require('com.google.j2cl.transpiler.readable.lambdas.Lambdas.JsSupplier$impl');
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Equals = goog.forwardDeclare('com.google.j2cl.transpiler.readable.lambdas.Lambdas.Equals$impl');
+let Number = goog.forwardDeclare('java.lang.Number$impl');
+
+
+/**
+ * @template T
+ * @implements {JsSupplier<T>}
+ */
+class $LambdaAdaptor extends j_l_Object {
+  /**
+   * @param {?function():T} fn
+   * @public
+   */
+  constructor(fn) {
+    $LambdaAdaptor.$clinit();
+    super();
+    /** @public {?function():T} */
+    this.f_$$fn__com_google_j2cl_transpiler_readable_lambdas_Lambdas_JsSupplier_$LambdaAdaptor;
+    this.$ctor__com_google_j2cl_transpiler_readable_lambdas_Lambdas_JsSupplier_$LambdaAdaptor__com_google_j2cl_transpiler_readable_lambdas_Lambdas_JsSupplier_$JsFunction(
+        fn);
+  }
+
+  /**
+   * @param {?function():T} fn
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_lambdas_Lambdas_JsSupplier_$LambdaAdaptor__com_google_j2cl_transpiler_readable_lambdas_Lambdas_JsSupplier_$JsFunction(
+      fn) {
+    this.$ctor__java_lang_Object__();
+    this.f_$$fn__com_google_j2cl_transpiler_readable_lambdas_Lambdas_JsSupplier_$LambdaAdaptor =
+        fn;
+  }
+
+  /**
+   * @return {T}
+   * @public
+   */
+  get() {
+    let /** ?function():T */ $function;
+    return (
+        $function =
+            this.f_$$fn__com_google_j2cl_transpiler_readable_lambdas_Lambdas_JsSupplier_$LambdaAdaptor,
+        $function());
+  }
+
+  /**
+   * Bridge method for exposing non-JsMethod.
+   * @override
+   * @return {T}
+   * @public
+   */
+  m_get__() {
+    return this.get();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    $LambdaAdaptor.$clinit = (() => {});
+    $LambdaAdaptor.$loadModules();
+    j_l_Object.$clinit();
+    Equals.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof $LambdaAdaptor;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, $LambdaAdaptor);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    Equals = goog.module.get(
+        'com.google.j2cl.transpiler.readable.lambdas.Lambdas.Equals$impl');
+  }
+};
+
+$Util.$setClassMetadata(
+    $LambdaAdaptor,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.lambdas.Lambdas$JsSupplier$$LambdaAdaptor'));
+
+
+JsSupplier.$markImplementor($LambdaAdaptor);
+
+
+exports = $LambdaAdaptor;
+//# sourceMappingURL=Lambdas$JsSupplier$$LambdaAdaptor.js.map

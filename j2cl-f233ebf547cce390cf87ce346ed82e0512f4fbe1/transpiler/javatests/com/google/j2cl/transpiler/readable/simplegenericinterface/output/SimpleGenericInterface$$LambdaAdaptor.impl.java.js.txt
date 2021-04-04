@@ -1,0 +1,104 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.simplegenericinterface.SimpleGenericInterface$$LambdaAdaptor.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.simplegenericinterface.SimpleGenericInterface.$LambdaAdaptor$impl');
+
+
+const SimpleGenericInterface = goog.require('com.google.j2cl.transpiler.readable.simplegenericinterface.SimpleGenericInterface$impl');
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @template T
+ * @implements {SimpleGenericInterface<T>}
+ */
+class $LambdaAdaptor extends j_l_Object {
+  /**
+   * @param {?function(T):T} fn
+   * @public
+   */
+  constructor(fn) {
+    $LambdaAdaptor.$clinit();
+    super();
+    /** @public {?function(T):T} */
+    this.f_$$fn__com_google_j2cl_transpiler_readable_simplegenericinterface_SimpleGenericInterface_$LambdaAdaptor;
+    this.$ctor__com_google_j2cl_transpiler_readable_simplegenericinterface_SimpleGenericInterface_$LambdaAdaptor__com_google_j2cl_transpiler_readable_simplegenericinterface_SimpleGenericInterface_$JsFunction(
+        fn);
+  }
+
+  /**
+   * @param {?function(T):T} fn
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_simplegenericinterface_SimpleGenericInterface_$LambdaAdaptor__com_google_j2cl_transpiler_readable_simplegenericinterface_SimpleGenericInterface_$JsFunction(
+      fn) {
+    this.$ctor__java_lang_Object__();
+    this.f_$$fn__com_google_j2cl_transpiler_readable_simplegenericinterface_SimpleGenericInterface_$LambdaAdaptor =
+        fn;
+  }
+
+  /**
+   * @param {T} arg0
+   * @return {T}
+   * @public
+   */
+  m_fun__java_lang_Object(arg0) {
+    let /** ?function(T):T */ $function;
+    return (
+        $function =
+            this.f_$$fn__com_google_j2cl_transpiler_readable_simplegenericinterface_SimpleGenericInterface_$LambdaAdaptor,
+        $function(arg0));
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    $LambdaAdaptor.$clinit = (() => {});
+    $LambdaAdaptor.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof $LambdaAdaptor;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, $LambdaAdaptor);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    $LambdaAdaptor,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.simplegenericinterface.SimpleGenericInterface$$LambdaAdaptor'));
+
+
+SimpleGenericInterface.$markImplementor($LambdaAdaptor);
+
+
+exports = $LambdaAdaptor;
+//# sourceMappingURL=SimpleGenericInterface$$LambdaAdaptor.js.map

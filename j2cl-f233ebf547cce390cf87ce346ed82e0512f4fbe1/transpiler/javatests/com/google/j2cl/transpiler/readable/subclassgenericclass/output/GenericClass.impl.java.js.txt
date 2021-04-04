@@ -1,0 +1,90 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.subclassgenericclass.GenericClass.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.subclassgenericclass.GenericClass$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @template T
+ */
+class GenericClass extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @template T
+   * @return {!GenericClass<T>}
+   * @public
+   */
+  static $create__() {
+    GenericClass.$clinit();
+    let $instance = new GenericClass();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_subclassgenericclass_GenericClass__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_subclassgenericclass_GenericClass__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    GenericClass.$clinit = (() => {});
+    GenericClass.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof GenericClass;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, GenericClass);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    GenericClass,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.subclassgenericclass.GenericClass'));
+
+
+
+exports = GenericClass;
+//# sourceMappingURL=GenericClass.js.map

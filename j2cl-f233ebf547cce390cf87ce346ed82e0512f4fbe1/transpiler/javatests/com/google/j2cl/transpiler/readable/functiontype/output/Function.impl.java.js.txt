@@ -1,0 +1,81 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.functiontype.Function.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.functiontype.Function$impl');
+
+
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @interface
+ */
+class c_g_j2cl_transpiler_readable_functiontype_Function {
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    c_g_j2cl_transpiler_readable_functiontype_Function.$clinit = (() => {});
+    c_g_j2cl_transpiler_readable_functiontype_Function.$loadModules();
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @public
+   */
+  static $markImplementor(classConstructor) {
+    /**
+     * @public {boolean}
+     */
+    classConstructor.prototype
+        .$implements__com_google_j2cl_transpiler_readable_functiontype_Function =
+        true;
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance != null &&
+        !!instance
+              .$implements__com_google_j2cl_transpiler_readable_functiontype_Function;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return classConstructor != null &&
+        !!classConstructor.prototype
+              .$implements__com_google_j2cl_transpiler_readable_functiontype_Function;
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadataForInterface(
+    c_g_j2cl_transpiler_readable_functiontype_Function,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.functiontype.Function'));
+
+
+c_g_j2cl_transpiler_readable_functiontype_Function.$markImplementor(
+    /** @type {Function} */ (
+        c_g_j2cl_transpiler_readable_functiontype_Function));
+
+
+exports = c_g_j2cl_transpiler_readable_functiontype_Function;
+//# sourceMappingURL=Function.js.map

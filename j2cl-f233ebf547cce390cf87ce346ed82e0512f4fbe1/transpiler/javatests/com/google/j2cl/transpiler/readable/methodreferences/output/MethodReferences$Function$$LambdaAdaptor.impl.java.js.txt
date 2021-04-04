@@ -1,0 +1,104 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.methodreferences.MethodReferences$Function$$LambdaAdaptor.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.methodreferences.MethodReferences.Function.$LambdaAdaptor$impl');
+
+
+const MethodReferences_Function = goog.require('com.google.j2cl.transpiler.readable.methodreferences.MethodReferences.Function$impl');
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+/**
+ * @template T, U
+ * @implements {MethodReferences_Function<T, U>}
+ */
+class $LambdaAdaptor extends j_l_Object {
+  /**
+   * @param {?function(T):U} fn
+   * @public
+   */
+  constructor(fn) {
+    $LambdaAdaptor.$clinit();
+    super();
+    /** @public {?function(T):U} */
+    this.f_$$fn__com_google_j2cl_transpiler_readable_methodreferences_MethodReferences_Function_$LambdaAdaptor;
+    this.$ctor__com_google_j2cl_transpiler_readable_methodreferences_MethodReferences_Function_$LambdaAdaptor__com_google_j2cl_transpiler_readable_methodreferences_MethodReferences_Function_$JsFunction(
+        fn);
+  }
+
+  /**
+   * @param {?function(T):U} fn
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_methodreferences_MethodReferences_Function_$LambdaAdaptor__com_google_j2cl_transpiler_readable_methodreferences_MethodReferences_Function_$JsFunction(
+      fn) {
+    this.$ctor__java_lang_Object__();
+    this.f_$$fn__com_google_j2cl_transpiler_readable_methodreferences_MethodReferences_Function_$LambdaAdaptor =
+        fn;
+  }
+
+  /**
+   * @param {T} arg0
+   * @return {U}
+   * @public
+   */
+  m_apply__java_lang_Object(arg0) {
+    let /** ?function(T):U */ $function;
+    return (
+        $function =
+            this.f_$$fn__com_google_j2cl_transpiler_readable_methodreferences_MethodReferences_Function_$LambdaAdaptor,
+        $function(arg0));
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    $LambdaAdaptor.$clinit = (() => {});
+    $LambdaAdaptor.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof $LambdaAdaptor;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, $LambdaAdaptor);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    $LambdaAdaptor,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.methodreferences.MethodReferences$Function$$LambdaAdaptor'));
+
+
+MethodReferences_Function.$markImplementor($LambdaAdaptor);
+
+
+exports = $LambdaAdaptor;
+//# sourceMappingURL=MethodReferences$Function$$LambdaAdaptor.js.map

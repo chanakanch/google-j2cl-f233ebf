@@ -1,0 +1,97 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.unimplementedbridgemethod.J.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.unimplementedbridgemethod.J$impl');
+
+
+const I = goog.require('com.google.j2cl.transpiler.readable.unimplementedbridgemethod.I$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let $LambdaAdaptor = goog.forwardDeclare('com.google.j2cl.transpiler.readable.unimplementedbridgemethod.J.$LambdaAdaptor$impl');
+
+
+/**
+ * @interface
+ * @extends {I<?string>}
+ */
+class J {
+  /**
+   * @param {?function(?string):number} fn
+   * @return {J}
+   * @public
+   */
+  static $adapt(fn) {
+    J.$clinit();
+    return new $LambdaAdaptor(fn);
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    J.$clinit = (() => {});
+    J.$loadModules();
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @public
+   */
+  static $markImplementor(classConstructor) {
+    I.$markImplementor(classConstructor);
+    /**
+     * @public {boolean}
+     */
+    classConstructor.prototype
+        .$implements__com_google_j2cl_transpiler_readable_unimplementedbridgemethod_J =
+        true;
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance != null &&
+        !!instance
+              .$implements__com_google_j2cl_transpiler_readable_unimplementedbridgemethod_J;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return classConstructor != null &&
+        !!classConstructor.prototype
+              .$implements__com_google_j2cl_transpiler_readable_unimplementedbridgemethod_J;
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {
+    $LambdaAdaptor = goog.module.get(
+        'com.google.j2cl.transpiler.readable.unimplementedbridgemethod.J.$LambdaAdaptor$impl');
+  }
+};
+
+$Util.$setClassMetadataForInterface(
+    J,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.unimplementedbridgemethod.J'));
+
+
+J.$markImplementor(/** @type {Function} */ (J));
+
+
+exports = J;
+//# sourceMappingURL=J.js.map

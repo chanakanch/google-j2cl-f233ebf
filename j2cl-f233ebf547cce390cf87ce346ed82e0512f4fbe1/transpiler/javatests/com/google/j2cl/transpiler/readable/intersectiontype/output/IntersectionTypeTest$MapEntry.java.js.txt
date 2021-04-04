@@ -1,0 +1,23 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest$MapEntry.
+ *
+ * @suppress {extraRequire, lateProvide, unusedLocalVariables,
+ * strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.MapEntry');
+
+
+// Imports headers for both eager and lazy dependencies to ensure that
+// all files are included in the dependency tree.
+const _j_l_Object = goog.require('java.lang.Object');
+const _$Util = goog.require('nativebootstrap.Util');
+const _Getable = goog.require('com.google.j2cl.transpiler.readable.intersectiontype.Getable');
+const _IntersectionTypeTest = goog.require('com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest');
+const _Setable = goog.require('com.google.j2cl.transpiler.readable.intersectiontype.Setable');
+const _$Casts = goog.require('vmbootstrap.Casts');
+
+
+// Re-exports the implementation.
+var MapEntry = goog.require('com.google.j2cl.transpiler.readable.intersectiontype.IntersectionTypeTest.MapEntry$impl');
+exports = MapEntry;

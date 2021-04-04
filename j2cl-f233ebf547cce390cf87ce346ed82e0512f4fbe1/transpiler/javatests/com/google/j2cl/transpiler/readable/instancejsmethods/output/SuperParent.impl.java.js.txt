@@ -1,0 +1,106 @@
+/**
+ * @fileoverview transpiled from
+ * com.google.j2cl.transpiler.readable.instancejsmethods.SuperParent.
+ *
+ * @suppress {const, extraRequire, missingOverride, missingRequire,
+ * suspiciousCode, transitionalSuspiciousCodeWarnings, unusedLocalVariables,
+ * uselessCode, strictModuleDepCheck}
+ */
+goog.module('com.google.j2cl.transpiler.readable.instancejsmethods.SuperParent$impl');
+
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+
+class SuperParent extends j_l_Object {
+  /**
+   * @protected
+   */
+  constructor() {
+    super();
+  }
+
+  /**
+   * @return {!SuperParent}
+   * @public
+   */
+  static $create__() {
+    SuperParent.$clinit();
+    let $instance = new SuperParent();
+    $instance
+        .$ctor__com_google_j2cl_transpiler_readable_instancejsmethods_SuperParent__();
+    return $instance;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  $ctor__com_google_j2cl_transpiler_readable_instancejsmethods_SuperParent__() {
+    this.$ctor__java_lang_Object__();
+  }
+
+  /**
+   * @param {number} a
+   * @param {number} b
+   * @return {number}
+   * @public
+   */
+  m_fun__int__int(a, b) {
+    return a + b + 111;
+  }
+
+  /**
+   * @param {number} a
+   * @param {number} b
+   * @return {number}
+   * @public
+   */
+  m_bar__int__int(a, b) {
+    return a * b + 222;
+  }
+
+  /**
+   * @return {void}
+   * @public
+   */
+  static $clinit() {
+    SuperParent.$clinit = (() => {});
+    SuperParent.$loadModules();
+    j_l_Object.$clinit();
+  }
+
+  /**
+   * @param {?} instance
+   * @return {boolean}
+   * @public
+   */
+  static $isInstance(instance) {
+    return instance instanceof SuperParent;
+  }
+
+  /**
+   * @param {Function} classConstructor
+   * @return {boolean}
+   * @public
+   */
+  static $isAssignableFrom(classConstructor) {
+    return $Util.$canCastClass(classConstructor, SuperParent);
+  }
+
+  /**
+   * @public
+   */
+  static $loadModules() {}
+};
+
+$Util.$setClassMetadata(
+    SuperParent,
+    $Util.$makeClassName(
+        'com.google.j2cl.transpiler.readable.instancejsmethods.SuperParent'));
+
+
+
+exports = SuperParent;
+//# sourceMappingURL=SuperParent.js.map
